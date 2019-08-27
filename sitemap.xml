@@ -3,63 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>stevenzeng.net/</loc>
+    <loc>/</loc>
     <lastmod>2019-08-27T21:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>stevenzeng.net/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2019-08-27T21:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>stevenzeng.net/posts/how-to-fix-%E6%88%91-twitter-%E7%B2%89%E4%B8%9D%E9%87%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E6%88%900%E4%BA%86/</loc>
+    <loc>/posts/how-to-fix-%E6%88%91-twitter-%E7%B2%89%E4%B8%9D%E9%87%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E6%88%900%E4%BA%86/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>stevenzeng.net/tags/medium/</loc>
-    <lastmod>2019-04-10T14:26:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>stevenzeng.net/posts/</loc>
+    <loc>/tags/medium/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>stevenzeng.net/tags/</loc>
+    <loc>/posts/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>stevenzeng.net/posts/%E6%88%91%E5%B8%B8%E5%90%AC%E7%9A%84-podcast-%E6%8E%A8%E8%8D%90%E5%90%88%E9%9B%86/</loc>
-    <lastmod>2019-04-10T14:26:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>stevenzeng.net/tags/%E6%92%AD%E5%AE%A2/</loc>
+    <loc>/tags/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>stevenzeng.net/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</loc>
+    <loc>/posts/%E6%88%91%E5%B8%B8%E5%90%AC%E7%9A%84-podcast-%E6%8E%A8%E8%8D%90%E5%90%88%E9%9B%86/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>stevenzeng.net/tags/%E6%9D%82%E8%AE%B0/</loc>
+    <loc>/tags/%E6%92%AD%E5%AE%A2/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>stevenzeng.net/categories/</loc>
+    <loc>/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2019-04-10T14:26:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%9D%82%E8%AE%B0/</loc>
+    <lastmod>2019-04-10T14:26:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   

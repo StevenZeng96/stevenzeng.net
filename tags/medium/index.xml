@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Medium on Steven Zeng</title>
-    <link>/tags/medium/</link>
+    <link>https://stevenzeng.net/tags/medium/</link>
     <description>Recent content in Medium on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 10 Apr 2019 14:26:00 +0800</lastBuildDate>
     
-	<atom:link href="/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://stevenzeng.net/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>新目标，在 Ulysses 上直接发布 Medium 文章</title>
-      <link>/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</link>
+      <link>https://stevenzeng.net/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</link>
       <pubDate>Wed, 10 Apr 2019 14:26:00 +0800</pubDate>
       
-      <guid>/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</guid>
+      <guid>https://stevenzeng.net/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</guid>
       <description>仔细一想已经有很长一段时间没在 Medium.com 上发文章了。 因为此前将 XMLinkUP 的文章从 Medium 迁移到了 Wordpress，然后建立了 xmlinkup.com 专门用来存放 XMLinkUP 的文章，Medium 这边就显得干净了不少。既然空着，那就不如放点自己随手写的玩意</description>
     </item>
     

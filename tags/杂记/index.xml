@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>杂记 on Steven Zeng</title>
-    <link>/tags/%E6%9D%82%E8%AE%B0/</link>
+    <link>https://stevenzeng.net/tags/%E6%9D%82%E8%AE%B0/</link>
     <description>Recent content in 杂记 on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 10 Apr 2019 14:26:00 +0800</lastBuildDate>
     
-	<atom:link href="/tags/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://stevenzeng.net/tags/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How To Fix: 我 Twitter 粉丝量被锁定成0了！</title>
-      <link>/posts/how-to-fix-%E6%88%91-twitter-%E7%B2%89%E4%B8%9D%E9%87%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E6%88%900%E4%BA%86/</link>
+      <link>https://stevenzeng.net/posts/how-to-fix-%E6%88%91-twitter-%E7%B2%89%E4%B8%9D%E9%87%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E6%88%900%E4%BA%86/</link>
       <pubDate>Wed, 10 Apr 2019 14:26:00 +0800</pubDate>
       
-      <guid>/posts/how-to-fix-%E6%88%91-twitter-%E7%B2%89%E4%B8%9D%E9%87%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E6%88%900%E4%BA%86/</guid>
+      <guid>https://stevenzeng.net/posts/how-to-fix-%E6%88%91-twitter-%E7%B2%89%E4%B8%9D%E9%87%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E6%88%900%E4%BA%86/</guid>
       <description>当你的 Twitter 账号被锁定到 0 粉丝的时候，不要尝试通过 Twitter 客服进行联系（因为他们不会鸟你），也不要尝试通过表单的形式提交工单（因为工单提交完毕的时候，它会告诉你，他们不会回复你的）。 所以当这样的事情发生的时候，</description>
     </item>
     
     <item>
       <title>我常听的 Podcast 推荐合集</title>
-      <link>/posts/%E6%88%91%E5%B8%B8%E5%90%AC%E7%9A%84-podcast-%E6%8E%A8%E8%8D%90%E5%90%88%E9%9B%86/</link>
+      <link>https://stevenzeng.net/posts/%E6%88%91%E5%B8%B8%E5%90%AC%E7%9A%84-podcast-%E6%8E%A8%E8%8D%90%E5%90%88%E9%9B%86/</link>
       <pubDate>Wed, 10 Apr 2019 14:26:00 +0800</pubDate>
       
-      <guid>/posts/%E6%88%91%E5%B8%B8%E5%90%AC%E7%9A%84-podcast-%E6%8E%A8%E8%8D%90%E5%90%88%E9%9B%86/</guid>
+      <guid>https://stevenzeng.net/posts/%E6%88%91%E5%B8%B8%E5%90%AC%E7%9A%84-podcast-%E6%8E%A8%E8%8D%90%E5%90%88%E9%9B%86/</guid>
       <description>对于我而言，接触 Podcast 的已经有那么四五年了，从最开始的只听一家一期不落到现在 Inbox 满到爆炸，中间看到不少 Podcast 从零开始，也有不少 Podcast 就此终结。 由于这一段时间正好在和朋友一起策划弄自己的 Podcast，就在这里稍微整</description>
     </item>
     
     <item>
       <title>新目标，在 Ulysses 上直接发布 Medium 文章</title>
-      <link>/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</link>
+      <link>https://stevenzeng.net/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</link>
       <pubDate>Wed, 10 Apr 2019 14:26:00 +0800</pubDate>
       
-      <guid>/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</guid>
+      <guid>https://stevenzeng.net/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</guid>
       <description>仔细一想已经有很长一段时间没在 Medium.com 上发文章了。 因为此前将 XMLinkUP 的文章从 Medium 迁移到了 Wordpress，然后建立了 xmlinkup.com 专门用来存放 XMLinkUP 的文章，Medium 这边就显得干净了不少。既然空着，那就不如放点自己随手写的玩意</description>
     </item>
     

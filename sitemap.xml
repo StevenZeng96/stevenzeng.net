@@ -14,24 +14,41 @@
   </url>
   
   <url>
+    <loc>https://stevenzeng.net/posts/</loc>
+    <lastmod>2019-08-12T14:26:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stevenzeng.net/tags/</loc>
+    <lastmod>2019-08-12T14:26:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stevenzeng.net/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E6%B5%B7%E5%A4%96%E6%8E%A8%E5%B9%BF%E4%BD%A0%E7%9A%84%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%90%88%E9%9B%86/</loc>
+    <lastmod>2019-08-12T14:26:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stevenzeng.net/tags/%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2019-08-12T14:26:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stevenzeng.net/tags/%E8%AF%91%E4%BB%8B/</loc>
+    <lastmod>2019-08-12T14:26:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://stevenzeng.net/posts/how-to-fix-%E6%88%91-twitter-%E7%B2%89%E4%B8%9D%E9%87%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E6%88%900%E4%BA%86/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://stevenzeng.net/tags/medium/</loc>
-    <lastmod>2019-04-10T14:26:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stevenzeng.net/posts/</loc>
-    <lastmod>2019-04-10T14:26:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stevenzeng.net/tags/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>

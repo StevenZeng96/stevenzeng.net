@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>玩家采访 on Steven Zeng</title>
+    <link>https://stevenzeng.net/tags/%E7%8E%A9%E5%AE%B6%E9%87%87%E8%AE%BF/</link>
+    <description>Recent content in 玩家采访 on Steven Zeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 07 May 2018 19:32:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://stevenzeng.net/tags/%E7%8E%A9%E5%AE%B6%E9%87%87%E8%AE%BF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>玩家说01 | Seal的游戏世界</title>
+      <link>https://stevenzeng.net/posts/%E7%8E%A9%E5%AE%B6%E8%AF%B401-seal%E7%9A%84%E6%B8%B8%E6%88%8F%E4%B8%96%E7%95%8C/</link>
+      <pubDate>Mon, 07 May 2018 19:32:00 +0800</pubDate>
+      
+      <guid>https://stevenzeng.net/posts/%E7%8E%A9%E5%AE%B6%E8%AF%B401-seal%E7%9A%84%E6%B8%B8%E6%88%8F%E4%B8%96%E7%95%8C/</guid>
+      <description>《玩家说》是一个分享萤火虫玩家们游戏经历的访谈节目，我们将陆续与萤火虫玩家们进行访谈，带你通过不同的视角看游戏。 Seal这词本身有挺多的解释：“海豹、封条、封印…在魔兽里圣印也是这个词。计算机里语言封</description>
+    </item>
+    
+  </channel>
+</rss>

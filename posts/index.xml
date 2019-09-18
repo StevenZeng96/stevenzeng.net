@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 12 Sep 2019 14:00:20 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Sep 2019 15:30:00 +0800</lastBuildDate>
     
 	<atom:link href="https://stevenzeng.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Steam Library Beta 测试</title>
+      <link>https://stevenzeng.net/posts/steam-library-beta-%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Wed, 18 Sep 2019 15:30:00 +0800</pubDate>
+      
+      <guid>https://stevenzeng.net/posts/steam-library-beta-%E6%B5%8B%E8%AF%95/</guid>
+      <description>Library 更新本质：Library 更新重心在于通过新版本调动 Steam 玩家游玩库中的游戏，以解决“买后从来不玩”的 Steam 现状（往日通过季节性活动奖励调动玩家游玩，但治标不治本），无意解决商店导流与游戏推荐问题。 Steam Library Beta 首页</description>
+    </item>
     
     <item>
       <title>GDC演讲记录：如何从零开始建设游戏社群</title>

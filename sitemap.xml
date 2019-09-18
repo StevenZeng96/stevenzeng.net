@@ -3,26 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://stevenzeng.net/posts/gdc%E6%BC%94%E8%AE%B2%E8%AE%B0%E5%BD%95%E5%A6%82%E4%BD%95%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%BB%BA%E8%AE%BE%E6%B8%B8%E6%88%8F%E7%A4%BE%E7%BE%A4/</loc>
-    <lastmod>2019-09-12T14:00:20+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://stevenzeng.net/posts/</loc>
-    <lastmod>2019-09-12T14:00:20+08:00</lastmod>
+    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://stevenzeng.net/tags/steam/</loc>
+    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stevenzeng.net/posts/steam-library-beta-%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://stevenzeng.net/</loc>
-    <lastmod>2019-09-12T14:00:20+08:00</lastmod>
+    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://stevenzeng.net/tags/</loc>
-    <lastmod>2019-09-12T14:00:20+08:00</lastmod>
+    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stevenzeng.net/posts/gdc%E6%BC%94%E8%AE%B2%E8%AE%B0%E5%BD%95%E5%A6%82%E4%BD%95%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%BB%BA%E8%AE%BE%E6%B8%B8%E6%88%8F%E7%A4%BE%E7%BE%A4/</loc>
+    <lastmod>2019-09-12T14:00:20+08:00</lastmod>
   </url>
   
   <url>

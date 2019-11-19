@@ -3,159 +3,164 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://stevenzeng.net/posts/</loc>
-    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
+    <loc>https://www.stevenzeng.net/posts/%E6%97%A0%E6%A0%87%E9%A2%98/</loc>
+    <lastmod>2019-10-17T09:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/posts/</loc>
+    <lastmod>2019-10-17T09:30:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/steam/</loc>
-    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
+    <loc>https://www.stevenzeng.net/tags/steam/</loc>
+    <lastmod>2019-10-17T09:30:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/posts/steam-library-beta-%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://stevenzeng.net/</loc>
-    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
+    <loc>https://www.stevenzeng.net/</loc>
+    <lastmod>2019-10-17T09:30:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/</loc>
-    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
+    <loc>https://www.stevenzeng.net/tags/</loc>
+    <lastmod>2019-10-17T09:30:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/posts/gdc%E6%BC%94%E8%AE%B2%E8%AE%B0%E5%BD%95%E5%A6%82%E4%BD%95%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%BB%BA%E8%AE%BE%E6%B8%B8%E6%88%8F%E7%A4%BE%E7%BE%A4/</loc>
+    <loc>https://www.stevenzeng.net/posts/steam-library-beta-%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/posts/gdc%E6%BC%94%E8%AE%B2%E8%AE%B0%E5%BD%95%E5%A6%82%E4%BD%95%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%BB%BA%E8%AE%BE%E6%B8%B8%E6%88%8F%E7%A4%BE%E7%BE%A4/</loc>
     <lastmod>2019-09-12T14:00:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E5%8F%91%E8%A1%8C/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E5%8F%91%E8%A1%8C/</loc>
     <lastmod>2019-09-12T14:00:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/%E7%A4%BE%E7%BE%A4%E5%BB%BA%E8%AE%BE/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E7%A4%BE%E7%BE%A4%E5%BB%BA%E8%AE%BE/</loc>
     <lastmod>2019-09-12T14:00:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/about/</loc>
+    <loc>https://www.stevenzeng.net/about/</loc>
     <lastmod>2019-08-27T21:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E6%B5%B7%E5%A4%96%E6%8E%A8%E5%B9%BF%E4%BD%A0%E7%9A%84%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%90%88%E9%9B%86/</loc>
+    <loc>https://www.stevenzeng.net/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E6%B5%B7%E5%A4%96%E6%8E%A8%E5%B9%BF%E4%BD%A0%E7%9A%84%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D%E5%90%88%E9%9B%86/</loc>
     <lastmod>2019-08-12T14:26:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2019-08-12T14:26:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stevenzeng.net/tags/%E8%AF%91%E4%BB%8B/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2019-08-12T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/posts/how-to-fix-%E6%88%91-twitter-%E7%B2%89%E4%B8%9D%E9%87%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E6%88%900%E4%BA%86/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E8%AF%91%E4%BB%8B/</loc>
+    <lastmod>2019-08-12T14:26:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/posts/how-to-fix-%E6%88%91-twitter-%E7%B2%89%E4%B8%9D%E9%87%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E6%88%900%E4%BA%86/</loc>
     <lastmod>2019-07-05T14:26:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/%E6%9D%82%E8%AE%B0/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2019-07-05T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/posts/%E6%88%91%E5%B8%B8%E5%90%AC%E7%9A%84-podcast-%E6%8E%A8%E8%8D%90%E5%90%88%E9%9B%86/</loc>
+    <loc>https://www.stevenzeng.net/posts/%E6%88%91%E5%B8%B8%E5%90%AC%E7%9A%84-podcast-%E6%8E%A8%E8%8D%90%E5%90%88%E9%9B%86/</loc>
     <lastmod>2019-05-08T14:26:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/%E6%92%AD%E5%AE%A2/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E6%92%AD%E5%AE%A2/</loc>
     <lastmod>2019-05-08T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/medium/</loc>
+    <loc>https://www.stevenzeng.net/tags/medium/</loc>
     <lastmod>2019-05-05T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</loc>
+    <loc>https://www.stevenzeng.net/posts/%E6%96%B0%E7%9B%AE%E6%A0%87%E5%9C%A8-ulysses-%E4%B8%8A%E7%9B%B4%E6%8E%A5%E5%8F%91%E5%B8%83-medium-%E6%96%87%E7%AB%A0/</loc>
     <lastmod>2019-05-05T14:26:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/2p/</loc>
+    <loc>https://www.stevenzeng.net/tags/2p/</loc>
     <lastmod>2018-05-07T19:32:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/posts/%E7%8E%A9%E5%AE%B6%E8%AF%B401-seal%E7%9A%84%E6%B8%B8%E6%88%8F%E4%B8%96%E7%95%8C/</loc>
+    <loc>https://www.stevenzeng.net/posts/%E7%8E%A9%E5%AE%B6%E8%AF%B401-seal%E7%9A%84%E6%B8%B8%E6%88%8F%E4%B8%96%E7%95%8C/</loc>
     <lastmod>2018-05-07T19:32:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/%E7%8E%A9%E5%AE%B6%E9%87%87%E8%AE%BF/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E7%8E%A9%E5%AE%B6%E9%87%87%E8%AE%BF/</loc>
     <lastmod>2018-05-07T19:32:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E8%AF%84%E6%B5%8B/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E8%AF%84%E6%B5%8B/</loc>
     <lastmod>2018-03-29T04:40:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/%E7%96%91%E6%A1%88%E8%BF%BD%E5%A3%B0/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E7%96%91%E6%A1%88%E8%BF%BD%E5%A3%B0/</loc>
     <lastmod>2018-03-29T04:40:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/posts/%E7%96%91%E6%A1%88%E8%BF%BD%E5%A3%B0%E5%88%9B%E6%84%8F%E7%8E%A9%E6%B3%95%E5%90%8E%E7%9A%84%E7%BB%9D%E5%A6%99%E6%BC%94%E5%87%BA/</loc>
+    <loc>https://www.stevenzeng.net/posts/%E7%96%91%E6%A1%88%E8%BF%BD%E5%A3%B0%E5%88%9B%E6%84%8F%E7%8E%A9%E6%B3%95%E5%90%8E%E7%9A%84%E7%BB%9D%E5%A6%99%E6%BC%94%E5%87%BA/</loc>
     <lastmod>2018-03-29T04:40:26+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/posts/google-stadia-%E6%AD%A3%E5%BC%8F%E5%85%AC%E5%B8%83%E4%BB%8A%E5%B9%B4%E6%88%91%E4%BB%AC%E9%83%BD%E6%98%AF%E4%BA%91%E7%8E%A9%E5%AE%B6/</loc>
+    <loc>https://www.stevenzeng.net/posts/google-stadia-%E6%AD%A3%E5%BC%8F%E5%85%AC%E5%B8%83%E4%BB%8A%E5%B9%B4%E6%88%91%E4%BB%AC%E9%83%BD%E6%98%AF%E4%BA%91%E7%8E%A9%E5%AE%B6/</loc>
     <lastmod>2018-03-20T11:32:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/tags/stadia/</loc>
-    <lastmod>2018-03-20T11:32:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E6%96%B0%E9%97%BB/</loc>
+    <loc>https://www.stevenzeng.net/tags/stadia/</loc>
     <lastmod>2018-03-20T11:32:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stevenzeng.net/categories/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E6%96%B0%E9%97%BB/</loc>
+    <lastmod>2018-03-20T11:32:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/categories/</loc>
     <priority>0</priority>
   </url>
   

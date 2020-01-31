@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ADB on Steven Zeng</title>
+    <link>https://www.stevenzeng.net/tags/adb/</link>
+    <description>Recent content in ADB on Steven Zeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 30 Jan 2020 14:00:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.stevenzeng.net/tags/adb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在 Android TV 上远程安装应用</title>
+      <link>https://www.stevenzeng.net/posts/android%E7%94%B5%E8%A7%86/</link>
+      <pubDate>Thu, 30 Jan 2020 14:00:20 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/android%E7%94%B5%E8%A7%86/</guid>
+      <description>由于春节假期期间肺炎疫情十分严重，闲来无事的我开始倒腾自家的小米盒子。不过这玩意可比我想象的恶劣不少，先不提开机广告这些国内“智能电视”厂家必带的玩意，充斥着“会员充值”和低劣的UI设计让我完全不能忍</description>
+    </item>
+    
+  </channel>
+</rss>

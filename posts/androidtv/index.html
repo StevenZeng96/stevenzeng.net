@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  
+  <meta name="author"
+        content="Steven"/>
+
+  
+  <meta name="description" content="由于春节假期期间肺炎疫情十分严重，闲来无事的我开始倒腾自家的小米盒子。不过这玩意可比我想象的恶劣不少，先不提开机广告这些国内“智能电视”厂家必带的玩意，充斥着“会员充值”和低劣的UI设计让我完全不能忍"/>
+  
+
+  
+  
+  <meta name="keywords" content="独立游戏, Game, 游戏人"/>
+  
+
+  
+  <link rel="canonical" href="https://www.stevenzeng.net/posts/androidtv/"/>
+
+  
+
+  <title>在 Android TV 上远程安装应用 &middot; Steven Zeng</title>
+
+  <link rel="shortcut icon" href="https://www.stevenzeng.net/images/favicon.ico"/>
+  <link rel="stylesheet" href="https://www.stevenzeng.net/css/animate.min.css"/>
+  <link rel="stylesheet" href="https://www.stevenzeng.net/css/remixicon.css"/>
+  <link rel="stylesheet" href="https://www.stevenzeng.net/css/zozo.css"/>
+  <link rel="stylesheet" href="https://www.stevenzeng.net/css/highlight.css"/>
+
+  
+  
+</head>
+
+<body>
+<div class="main animated">
+  <div class="nav_container animated fadeInDown">
+  <div class="site_nav" id="site_nav">
+    <ul>
+      
+      <li>
+        <a href="/">首页</a>
+      </li>
+      
+      <li>
+        <a href="/posts/">文章</a>
+      </li>
+      
+      <li>
+        <a href="/tags/">标签</a>
+      </li>
+      
+      <li>
+        <a href="/about/">关于</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="menu_icon">
+    <a id="menu_icon"><i class="remixicon-links-line"></i></a>
+  </div>
+</div>
+
+  <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <h1>
+        <a href="https://www.stevenzeng.net">
+          <span>Steven Zeng</span>
+          <img src="https://www.stevenzeng.net/images/logo.png"/>
+        </a>
+      </h1>
+    </div>
+    <div class="description">
+      <p class="sub_title">游戏人的自留地</p>
+      <div class="my_socials">
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="https://www.twitter.com/StevenZeng96" title="twitter" target="_blank"><i class="remixicon-twitter-fill"></i></a>
+        
+        
+        
+        
+        <a href="https://www.stevenzeng.net/index.xml" type="application/rss+xml" title="rss" target="_blank"><i class="remixicon-rss-fill"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="content">
+    <div class="post_page">
+      <div class="post animated fadeInDown">
+        <div class="post_title post_detail_title">
+          <h2><a href='/posts/androidtv/'>在 Android TV 上远程安装应用</a></h2>
+          <span class="date">2020.01.30</span>
+        </div>
+        <div class="post_content markdown">
+
+<p>由于春节假期期间肺炎疫情十分严重，闲来无事的我开始倒腾自家的小米盒子。不过这玩意可比我想象的恶劣不少，先不提开机广告这些国内“智能电视”厂家必带的玩意，充斥着“会员充值”和低劣的UI设计让我完全不能忍受。</p>
+
+<div align="center"><blockquote class="twitter-tweet"><p lang="zh" dir="ltr">在小米盒子感受 Spotify 和 Apple Music 的风格大融合？🤨<a href="https://twitter.com/hashtag/%E4%B8%8D%E6%84%A7%E6%98%AF%E4%BD%A0?src=hash&amp;ref_src=twsrc%5Etfw">#不愧是你</a> <a href="https://t.co/ThUoIcAH1g">pic.twitter.com/ThUoIcAH1g</a></p>&mdash; StevenZeng (@StevenZeng96) <a href="https://twitter.com/StevenZeng96/status/1222805148876935168?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+<blockquote>
+<p>Apple Music 和 Spotify 两种设计思路融合在一起？小米盒子帮你做到了，而且还在同一个页面上！🤯</p>
+</blockquote>
+
+<p>于是我看了看家里用的索尼国行电视，决定在这台电视上把自己需要的所有东西装进去。</p>
+
+<blockquote>
+<p>如果你手头有一个 U 盘，你可以直接下载至 U 盘中，然后插在电视上完成本文所有工作。如果你和我一样手头没有一个 Type-C 转 B 口的两头 U 盘，又因为闲的没事做的话，你可以尝试通过本文所述步骤进行安装 ;)</p>
+</blockquote>
+
+<h2 id="准备工具">准备工具</h2>
+
+<p><img src="https://i.loli.net/2020/01/31/Pdo4AzG8qWZ5XrS.png" alt="" /></p>
+
+<ul>
+<li><a href="https://developer.android.com/studio/releases/platform-tools.html">Android Debug Bridge</a></li>
+<li><a href="https://www.apkmirror.com/">你需要安装的应用 APK</a></li>
+<li>一台 Android 电视（开启开发者模式，并开启 ADB 调试）</li>
+<li>你的电脑（需要和 Android 电视处于同一 Wifi 环境之下）</li>
+</ul>
+
+<blockquote>
+<ol>
+<li><p>开启开发者模式和 Android 手机相同，在关于本机的页面中点击版本号7次便可以开启</p></li>
+
+<li><p>如果你电脑上尚未安装 Android Debug Bridge 的话，可以前往 Google 开发者网站进行下载（如果点击下载没有任何反应可以尝试将网站语言切换至英文，有奇效）</p></li>
+
+<li><p>由于我个人并不使用 Android 设备，就盲目推荐 APK Mirror 进行 App 下载，如果你有更好的下载源也可以使用自己习惯的来源进行下载。</p></li>
+</ol>
+</blockquote>
+
+<h2 id="开始工作">开始工作</h2>
+
+<h3 id="1-连接至-android-tv">1. 连接至 Android TV</h3>
+
+<p>在连接至 Android TV 之前你需要找到电视所在的 IP地址，方式非常多，这里推荐直接进入设置-关于-状态，查看到IP地址。</p>
+
+<p>随后来到电脑上开启 Terminal，进入到 ADB 所在文件夹，输入</p>
+
+<p><code>./adb connect 电视的IP地址</code></p>
+
+<p>在电视上选择信任后再次输入以上命令即可连接电视。</p>
+
+<h3 id="2-将文件传输至电视">2. 将文件传输至电视</h3>
+
+<p>将文件传输至电视本应该是一件非常简单的事情，但是由于电视被锁定成了只读系统，因此我们需要找到一个可以进行读写的地方，我选择的位置便是 <code>/sdcard</code> 这一位置（也就是 <code>/storage/self/primary</code>）。</p>
+
+<blockquote>
+<p>当然你也可以选择其他地址进行传输，只需要使用<code>./adb shell</code> 进入命令行模式之后使用 <code>ls -l</code> 即可查看其他可用地址</p>
+</blockquote>
+
+<p>万事大吉！我们接下来终于要把文件传输到电视上了！</p>
+
+<p>使用 <code>./adb push 需要安装应用的安装包 /storage/self/primary/</code> 等待读条完毕即可</p>
+
+<h3 id="3-进行安装">3. 进行安装</h3>
+
+<p>最后一步就是安装了，安装部分非常简单，首先我们需要进入到终端进行操作 <code>./adb shell</code>，随后使用 <code>pm install /storage/self/primary/安装包名称</code> 即可完成操作。</p>
+
+<p>接下来按下遥控器上的主菜单，🥳恭喜，你需要的应用已经通过 Wi-Fi 安装完成了！Enjoy😉</p>
+
+<div align="center"><blockquote class="twitter-tweet"><p lang="zh" dir="ltr">有感而发的我折腾了一晚上的国行索尼电视，小米盒子可以走开了😑。。。<a href="https://twitter.com/hashtag/%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B?src=hash&amp;ref_src=twsrc%5Etfw">#一件小事</a></p>&mdash; StevenZeng (@StevenZeng96) <a href="https://twitter.com/StevenZeng96/status/1222881812952674307?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+<blockquote>
+<p>退出命令行的方式是输入 <code>exit</code> ，不要忘了自己仍然在电视里 🤪</p>
+</blockquote>
+</div>
+        <div class="post_footer">
+          
+          <div class="meta">
+            <div class="info">
+              <span class="field tags">
+                <i class="remixicon-stack-line"></i>
+                
+                <a href="https://www.stevenzeng.net/tags/android/">Android</a>
+                
+                <a href="https://www.stevenzeng.net/tags/adb/">ADB</a>
+                
+              </span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  <a id="back_to_top" href="#" class="back_to_top"><span>△</span></a>
+</div>
+<footer class="footer">
+  <div class="powered_by">
+    <a href="https://zeuk.me">Designed by Zeuk,</a>
+    <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+  </div>
+
+  <div class="footer_slogan">
+    <span>游戏人的自留地</span>
+  </div>
+</footer>
+
+
+
+<script src="https://www.stevenzeng.net/js/jquery-3.3.1.min.js"></script>
+<script src="https://www.stevenzeng.net/js/zozo.js"></script>
+<script src="https://www.stevenzeng.net/js/highlight.pack.js"></script>
+<link  href="https://www.stevenzeng.net/css/fancybox.min.css" rel="stylesheet">
+<script src="https://www.stevenzeng.net/js/fancybox.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+  <script type="text/javascript" async src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146588920-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>

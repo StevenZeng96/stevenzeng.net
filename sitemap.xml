@@ -1,35 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.stevenzeng.net/posts/</loc>
+    <lastmod>2020-06-21T14:00:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/tags/</loc>
+    <lastmod>2020-06-21T14:00:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/posts/freepromotion/</loc>
+    <lastmod>2020-06-21T14:00:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E5%8F%91%E8%A1%8C/</loc>
+    <lastmod>2020-06-21T14:00:20+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.stevenzeng.net/tags/adb/</loc>
     <lastmod>2020-01-30T14:00:20+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.stevenzeng.net/tags/android/</loc>
     <lastmod>2020-01-30T14:00:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.stevenzeng.net/posts/</loc>
-    <lastmod>2020-01-30T14:00:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.stevenzeng.net/</loc>
-    <lastmod>2020-01-30T14:00:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.stevenzeng.net/tags/</loc>
-    <lastmod>2020-01-30T14:00:20+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -40,7 +40,6 @@
   <url>
     <loc>https://www.stevenzeng.net/tags/steam/</loc>
     <lastmod>2019-09-18T15:30:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -54,15 +53,13 @@
   </url>
   
   <url>
-    <loc>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E5%8F%91%E8%A1%8C/</loc>
+    <loc>https://www.stevenzeng.net/tags/%E7%A4%BE%E7%BE%A4%E5%BB%BA%E8%AE%BE/</loc>
     <lastmod>2019-09-12T14:00:20+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.stevenzeng.net/tags/%E7%A4%BE%E7%BE%A4%E5%BB%BA%E8%AE%BE/</loc>
-    <lastmod>2019-09-12T14:00:20+08:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.stevenzeng.net/</loc>
+    <lastmod>2019-08-27T21:00:00+08:00</lastmod>
   </url>
   
   <url>
@@ -78,13 +75,11 @@
   <url>
     <loc>https://www.stevenzeng.net/tags/%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2019-08-12T14:26:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.stevenzeng.net/tags/%E8%AF%91%E4%BB%8B/</loc>
     <lastmod>2019-08-12T14:26:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -95,7 +90,6 @@
   <url>
     <loc>https://www.stevenzeng.net/tags/%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2019-07-05T14:26:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -106,13 +100,11 @@
   <url>
     <loc>https://www.stevenzeng.net/tags/%E6%92%AD%E5%AE%A2/</loc>
     <lastmod>2019-05-08T14:26:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.stevenzeng.net/tags/medium/</loc>
     <lastmod>2019-05-05T14:26:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -123,7 +115,6 @@
   <url>
     <loc>https://www.stevenzeng.net/tags/2p/</loc>
     <lastmod>2018-05-07T19:32:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -134,19 +125,16 @@
   <url>
     <loc>https://www.stevenzeng.net/tags/%E7%8E%A9%E5%AE%B6%E9%87%87%E8%AE%BF/</loc>
     <lastmod>2018-05-07T19:32:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E8%AF%84%E6%B5%8B/</loc>
     <lastmod>2018-03-29T04:40:26+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.stevenzeng.net/tags/%E7%96%91%E6%A1%88%E8%BF%BD%E5%A3%B0/</loc>
     <lastmod>2018-03-29T04:40:26+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -162,18 +150,19 @@
   <url>
     <loc>https://www.stevenzeng.net/tags/stadia/</loc>
     <lastmod>2018-03-20T11:32:29+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E6%96%B0%E9%97%BB/</loc>
     <lastmod>2018-03-20T11:32:29+08:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/posts/keen-%E5%8F%91%E8%A1%8C%E9%9C%80%E6%B1%82/</loc>
   </url>
   
   <url>
     <loc>https://www.stevenzeng.net/categories/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

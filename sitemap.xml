@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://www.stevenzeng.net/</loc>
+    <lastmod>2020-06-21T14:00:20+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.stevenzeng.net/tags/</loc>
     <lastmod>2020-06-21T14:00:20+08:00</lastmod>
   </url>
@@ -55,16 +60,6 @@
   <url>
     <loc>https://www.stevenzeng.net/tags/%E7%A4%BE%E7%BE%A4%E5%BB%BA%E8%AE%BE/</loc>
     <lastmod>2019-09-12T14:00:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.stevenzeng.net/</loc>
-    <lastmod>2019-08-27T21:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.stevenzeng.net/about/</loc>
-    <lastmod>2019-08-27T21:00:00+08:00</lastmod>
   </url>
   
   <url>
@@ -163,6 +158,10 @@
   
   <url>
     <loc>https://www.stevenzeng.net/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/about/</loc>
   </url>
   
 </urlset>

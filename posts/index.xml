@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Jul 2020 14:26:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2020 15:30:00 +0800</lastBuildDate>
     
 	<atom:link href="https://www.stevenzeng.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Steamworks 后台常用功能：转让应用程序</title>
+      <link>https://www.stevenzeng.net/posts/transferapp/</link>
+      <pubDate>Mon, 06 Jul 2020 15:30:00 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/transferapp/</guid>
+      <description>如果你需要将 Steamworks 后台上存有的游戏转让给其他人（例如签订了发行商，成立了单独的公司用于后续开发等等），转让应用程序便是你需要做的事情之一了。 转让应用程序的条件 转让应用程序是一件‘Steamworks 账户“</description>
+    </item>
     
     <item>
       <title>IndiePlay 报名</title>

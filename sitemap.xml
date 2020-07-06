@@ -3,22 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.stevenzeng.net/posts/indieplay/</loc>
-    <lastmod>2020-07-03T14:26:00+08:00</lastmod>
+    <loc>https://www.stevenzeng.net/posts/</loc>
+    <lastmod>2020-07-06T15:30:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.stevenzeng.net/posts/</loc>
-    <lastmod>2020-07-03T14:26:00+08:00</lastmod>
+    <loc>https://www.stevenzeng.net/tags/steam/</loc>
+    <lastmod>2020-07-06T15:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/posts/transferapp/</loc>
+    <lastmod>2020-07-06T15:30:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.stevenzeng.net/</loc>
-    <lastmod>2020-07-03T14:26:00+08:00</lastmod>
+    <lastmod>2020-07-06T15:30:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.stevenzeng.net/tags/</loc>
+    <lastmod>2020-07-06T15:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.stevenzeng.net/posts/indieplay/</loc>
     <lastmod>2020-07-03T14:26:00+08:00</lastmod>
   </url>
   
@@ -50,11 +60,6 @@
   <url>
     <loc>https://www.stevenzeng.net/posts/androidtv/</loc>
     <lastmod>2020-01-30T14:00:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.stevenzeng.net/tags/steam/</loc>
-    <lastmod>2019-09-18T15:30:00+08:00</lastmod>
   </url>
   
   <url>

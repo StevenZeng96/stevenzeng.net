@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WeGame on Steven Zeng</title>
+    <link>https://www.stevenzeng.net/tags/wegame/</link>
+    <description>Recent content in WeGame on Steven Zeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 Jul 2020 11:00:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.stevenzeng.net/tags/wegame/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在 WeGame 上新建游戏内容清单</title>
+      <link>https://www.stevenzeng.net/posts/creatapponwegame/</link>
+      <pubDate>Thu, 09 Jul 2020 11:00:20 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/creatapponwegame/</guid>
+      <description>🗺 WeGame上架游戏的完整步骤 如果你正在准备 WeGame 内容清单的内容，那么你正在处于游戏 ID 申请与签约步骤 📌 游戏基本信息 游戏所处阶段中“正式发行”指在 Steam 等其他平台发行上线过的游戏 游戏名称（必填，中，正式上线前</description>
+    </item>
+    
+  </channel>
+</rss>

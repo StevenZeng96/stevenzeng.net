@@ -6,10 +6,19 @@
     <description>Recent content on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 09 Jul 2020 11:00:20 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2020 15:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://www.stevenzeng.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Steam 实验室更新：标签搜索测试</title>
+      <link>https://www.stevenzeng.net/posts/steamsearchlab/</link>
+      <pubDate>Tue, 14 Jul 2020 15:00:00 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/steamsearchlab/</guid>
+      <description>Steam 实验室更新是一种 Steam 用于测试 Steam 商城的测试模式，他们会在商城中加入全新的功能并通过直接投入市场的方式探寻新功能的可能性。因此请注意，在“Steam 实验室”中出现的新功能并不一定会尘埃落定成为最终进入正式</description>
+    </item>
     
     <item>
       <title>WeGame 游戏上架①：新建游戏内容清单</title>

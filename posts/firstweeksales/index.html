@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Steam 商城研究：首周销量测算方式 &middot; Steven Zeng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146588920-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146588920-1');
+		</script>
+
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Steven Zeng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/">
+                
+                <span>首页</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/tags/">
+                
+                <span>标签</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>关于</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span></span>
+        
+        <br>
+        <span>&nbsp;</span><time datetime="2020-07-20 00:21:20 &#43;0800 CST"></time>
+</div>
+		<h1 class="post-title">Steam 商城研究：首周销量测算方式</h1>
+<div style="text-align: center; margin: 10px;">2020年7月20日</div>
+<div class="post-line"></div>
+
+		
+
+		<div class="content">
+			<p>游戏行业研究员 Simon Carless 前一段时间发表了一项 Steam 首周销量的调查报告。这份报告是通过50份游戏开发者自行提交的问卷结果统计测算得出。诚然，问卷调查在数据上具有一定的不确定性，但不论最终结果如何，这是一个让我们能够更加了解 Steam 商城背后机制的事。</p>
+<h2 id="在看答案前你需要知道的事">😀在看答案前你需要知道的事</h2>
+<h3 id="1-这份报告是如何诞生的">1. 这份报告是如何诞生的？</h3>
+<p>既然这样一个调查报告是通过问卷的方式得到，那么自然而然的你会想要看看得到这个结果的问卷到底长得怎样。以下是问卷的全部问题：</p>
+<ul>
+<li>游戏发售年限</li>
+<li>游戏发售价格（单位美元，采用区间而非精确数字）</li>
+<li>发售时游戏处于 EA 或是 正式版本</li>
+<li>Steam商店发售前的总愿望单量</li>
+<li>7天的愿望单转换量</li>
+<li>首周的销售总量</li>
+<li>游戏是否成为玩家的话题性作品（在非 Steam 的渠道上，评分值 1-10分）</li>
+</ul>
+<h3 id="2-此前是否有人做过类似的报告">2. 此前是否有人做过类似的报告？</h3>
+<p>有的，Jake Birkett 曾经在2018年的时候就发表过<a href="https://www.gamasutra.com/blogs/JakeBirkett/20180425/316924/How_many_wishlists_should_you_have_when_launching_on_Steam.php">他对于 Steam 商城的见解</a>。虽然对于现在而言时间有些久远，但仍然值得一看。（我可能会在之后译介这片稿子，带来一个更全面的认知）</p>
+<p><img src="https://i.loli.net/2020/07/20/29loPtE5fFGjcJC.png" alt="image.png"></p>
+<h3 id="3-steam-销售数据上有很大变化吗">3. Steam 销售数据上有很大变化吗？</h3>
+<p>没有，虽然 Steam 通过 Steam 实验室为这个商城带来了很多新功能，但总体的销售量/愿望单量的变化自2018年以来没有更本性的变化。</p>
+<h2 id="报告数据">📌报告数据</h2>
+<h3 id="整体数据">整体数据</h3>
+<p>不论是大是小，不论 EA 还是正式版本的游戏，不论愿望单的数量多少。对于整体数据进行计算得到的结果是：</p>
+<ul>
+<li>平均值：首周销售量为愿望单数量的 36%</li>
+<li>中位数：首周销量量为愿望单数量的 20%</li>
+<li>话题性： 3.876/10</li>
+</ul>
+<h3 id="ea版本发售数据">EA版本发售数据</h3>
+<ul>
+<li>平均值：首周销售量为愿望单数量的 29%</li>
+<li>中位数：首周销量量为愿望单数量的 16%</li>
+</ul>
+<h3 id="正式版本发售">正式版本发售</h3>
+<ul>
+<li>平均值：首周销售量为愿望单数量的 38%</li>
+<li>中位数：首周销量量为愿望单数量的 22%</li>
+</ul>
+<h3 id="愿望单破千的首周销售情况">愿望单破千的首周销售情况</h3>
+<ul>
+<li>平均值：首周销售量为愿望单数量的 32.5%</li>
+<li>中位数：首周销量量为愿望单数量的 16%</li>
+<li>话题性： 4.6/10</li>
+</ul>
+<h3 id="愿望单破万的首周销售情况">愿望单破万的首周销售情况</h3>
+<ul>
+<li>平均值：首周销售量为愿望单数量的 36.5%</li>
+<li>中位数：首周销量量为愿望单数量的 20%</li>
+<li>话题性： 6/10</li>
+</ul>
+<p><img src="https://i.loli.net/2020/07/20/2Bj57MusxwL8zbT.png" alt="image.png"></p>
+<blockquote>
+<p>虽然愿望单破万能够有些许优势，但就销量/愿望单比而言，整体数据并没有拉开距离。</p>
+</blockquote>
+<h2 id="总结">🙋‍♂️总结</h2>
+<p>对于熟悉 Steam 商城的我们而言，我们总会追求一个非常漂亮的愿望单数量。但愿望单就是万能的吗？从数据上来看，愿望单破万的游戏确确实实和其他的游戏有着完全不同的销售情况。但愿望单数量冲高就能完成你的销售的所有部分了吗？似乎并不是这样。</p>
+<blockquote>
+<p>在这份报告中，一个有着 19,140 愿望单的游戏首周愿望单转换率（请注意是转化率）为10.1%，首周足足卖出了 20,665 份游戏，在话题性方面，游戏团队认为他们有着 8/10 之多！</p>
+<p>但另一份愿望单破万的游戏则没有这么幸运，有着 23,500 愿望的他们首周愿望单转化率只有 1.8%，首周销量 750 份的他们认为自己的话题性只有 1/10…</p>
+</blockquote>
+<p><strong>那么怎样的游戏才能卖的好呢？</strong></p>
+<p>那些经常被媒体、社区、主播讨论的游戏才是热卖游戏。而如果你的游戏是那种愿望单数量极高但无人讨论的那种？那么你的实际销售情况可能与你的期望极为不符。</p>
+<p>回到我们的标题，那么这个估算到底怎么做呢？数据上讲你的实际销售数据可能会高于你的愿望单量，也可能不足1%，但<strong>按着中位数来吧，这可能你比较好的对标选择。</strong></p>
+<h2 id="相关链接">🔗相关链接</h2>
+<ul>
+<li>看看 Simon Carless 是怎么说的：<a href="https://gamediscoverability.substack.com/p/steam-the-new-wishlists-to-first">Steam: the new &lsquo;wishlists to first week sales&rsquo; expectations</a></li>
+<li>Jake Birkett 2018年发表过的见解：<a href="https://www.gamasutra.com/blogs/JakeBirkett/20180425/316924/How_many_wishlists_should_you_have_when_launching_on_Steam.php">How many wishlists should you have when launching on Steam?</a></li>
+</ul>
+
+		</div>
+
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stevenzeng-net';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+		
+
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/steamsearchlab/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-07-20 00:31:53.844632 &#43;0800 CST m=&#43;0.067138462">2020</time> Steven Zeng
+			</span>
+		</footer>
+
+	
+
+    </body>    
+</html>

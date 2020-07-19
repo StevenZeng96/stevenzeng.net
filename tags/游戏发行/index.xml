@@ -6,10 +6,19 @@
     <description>Recent content in 游戏发行 on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 09 Jul 2020 11:00:20 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 00:21:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E5%8F%91%E8%A1%8C/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Steam 商城研究：首周销量测算方式</title>
+      <link>https://www.stevenzeng.net/posts/firstweeksales/</link>
+      <pubDate>Mon, 20 Jul 2020 00:21:20 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/firstweeksales/</guid>
+      <description>游戏行业研究员 Simon Carless 前一段时间发表了一项 Steam 首周销量的调查报告。这份报告是通过50份游戏开发者自行提交的问卷结果统计测算得出。诚然，问卷调查在数据上具有一定的不确定性，但不论最终结果如何，这是一个让我们能</description>
+    </item>
     
     <item>
       <title>WeGame 游戏上架①：新建游戏内容清单</title>

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 06 Aug 2020 00:00:20 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2020 11:26:00 +0800</lastBuildDate>
     
 	<atom:link href="https://www.stevenzeng.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何将游戏上传至 Steamworks</title>
+      <link>https://www.stevenzeng.net/posts/uploadtosteamworks/</link>
+      <pubDate>Wed, 19 Aug 2020 11:26:00 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/uploadtosteamworks/</guid>
+      <description>在已经创建好了 Steamworks 账号，已经交完钱创建好了游戏项目之后，你的下一个问题一定就是如何将游戏上传至 Steam 服务器上了（俗称“传包”）。 由于 Steam 官方提供了带 GUI 的对应工具，因此传包工作在 Windows 系统下进行最为简单高效。当然，</description>
+    </item>
     
     <item>
       <title>Steam 中国的新一步，新数据标签 steamchinaapproved 上线</title>

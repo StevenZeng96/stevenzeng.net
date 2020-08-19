@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>如何将游戏上传至 Steamworks &middot; Steven Zeng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146588920-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146588920-1');
+		</script>
+
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Steven Zeng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/">
+                
+                <span>首页</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/tags/">
+                
+                <span>标签</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>关于</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span></span>
+        
+        <br>
+        <span>&nbsp;</span><time datetime="2020-08-19 11:26:00 &#43;0800 CST"></time>
+</div>
+		<h1 class="post-title">如何将游戏上传至 Steamworks</h1>
+<div style="text-align: center; margin: 10px;">2020年8月19日</div>
+<div class="post-line"></div>
+
+		
+
+		<div class="content">
+			<p>在已经创建好了 Steamworks 账号，已经交完钱创建好了游戏项目之后，你的下一个问题一定就是如何将游戏上传至 Steam 服务器上了（俗称“传包”）。</p>
+<blockquote>
+<p>由于 Steam 官方提供了带 GUI 的对应工具，因此传包工作在 Windows 系统下进行最为简单高效。当然，如果你正在使用 Linux 或者 macOS 系统，你也是可以独自完成传包工作的，你的上传工作可以参考官方提供的逐步视频教程(<a href="https://youtu.be/SoNH-v6aU9Q">YouTube</a>)</p>
+</blockquote>
+<h2 id="-准备工作">🤖 准备工作</h2>
+<p>在完成游戏上传工作之前，你需要从 Steam 平台获取以下几样东西作为传包的必要条件：</p>
+<ol>
+<li>SteamSDK - 用于文件传输</li>
+<li>appID - 用于指定 Steam 服务器上对应的游戏</li>
+<li>DepotID - 用于指定 appID 下对应的文件包</li>
+<li>指定可执行文件地址 - 用于 Steam 引导启动游戏</li>
+</ol>
+<h3 id="一steam-sdk">一、Steam SDK</h3>
+<p>访问 Steamworks Documentation 文档库，在 <a href="https://partner.steamgames.com/doc/sdk">Steamworks SDK 页面</a>下找到 Download the latest version of the Steamworks SDK。</p>
+<blockquote>
+<p>你也可以不用找，直接点击<a href="https://partner.steamgames.com/downloads/steamworks_sdk.zip">这里</a>下载 SDK 文件</p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/08/19/n7hjmryvAHPsM9B.png" alt="image.png"></p>
+<p>下载完成进行解压后，你就可以得到完整的 Steam 开发工具，但如果你的目标和我一样，只是传包而已的话，那么你大可不必关注该文件夹下的其他文件，你需要进行关注的只有两个部分：</p>
+<ul>
+<li>ContentBuilder 文件夹( steamworks_sdk_149\sdk\tools\ContentBuilder)</li>
+<li>SteamPipeGUI 压缩包（steamworks_sdk_149\sdk\tools）</li>
+</ul>
+<blockquote>
+<p>我们在这里先把 SteamPipeGUI 压缩包解压出来，便于后续使用</p>
+</blockquote>
+<h3 id="-额外工作">❉ 额外工作：</h3>
+<p>为了保证我们后续的传包过程平稳进行（主要是为了防止需要输入验证码而导致传包过程），在这里你可以提前运行 Steamcmd 完成登录流程，具体流程如下：</p>
+<ol>
+<li>
+<p>找到 Steamcmd 程序（\steamworks_sdk_149\sdk\tools\ContentBuilder\builder\steamcmd.exe），双击运行</p>
+</li>
+<li>
+<p>完成登录</p>
+<pre><code>login &lt;你的 Steam 账号&gt; &lt;你的 Steam 密码&gt;
+</code></pre><p>输入你收到的登陆验证码，完成登录</p>
+</li>
+</ol>
+<p>当完成以上步骤，你的命令行工作就已经完成了！恭喜！</p>
+<h3 id="二steamworks">二、Steamworks</h3>
+<p>接下来我们需要访问 Steamworks 获取并设置我们游戏的更多细节信息。</p>
+<h4 id="设置部分设定好游戏的执行文件地址">设置部分：设定好游戏的执行文件地址</h4>
+<ol>
+<li>首先登录 Steamworks 后台，输入账户密码后进入 Steam 后台面板，在后台面板上选择你的游戏，点击“编辑 Steamworks 设置”(Edit Steamworks Settings)。</li>
+</ol>
+<blockquote>
+<p>如果你无法完成此步骤，请检查 Steamworks 账号设置与账号权限，此处根据地方网络情况不同可能需要虚拟砖瓦混合型建筑逾越技术的帮助。</p>
+</blockquote>
+<blockquote>
+<p>在此处，你可以设置更改 Steam 商城上进行展示的名称、接入成就系统、设置统计数据、设置创意工坊等等，我们可以在这个区域内完成一些基础性设置，在这里就不进行赘述。</p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/08/19/8QKVftHOoT4e26y.png" alt="image.png"></p>
+<ol start="2">
+<li>选择 安装 - 通用安装，在启动选项中的填写可执行文件地址。</li>
+</ol>
+<blockquote>
+<p>我们在这里假设我们要为一个 Windows 系统上运行的游戏设置可执行文件，而它的相对位置在安装目录下 \folder\2pgames.exe ，那么你就需要填写如图所示的内容</p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/08/19/VDbxBhYJdMpoLWr.png" alt="image.png"></p>
+<h4 id="查询部分appid-与-depotid">查询部分：appID 与 depotID</h4>
+<p>这部分很简单，我们进入 SteamPipe - Depot 页面，在这个页面上你便可以找到所有需要的内容，如图所示</p>
+<p><img src="https://i.loli.net/2020/08/19/mFhqBOelas1i2Pf.png" alt="Screen Shot 2020-08-19 at 11.05.03 AM.png"></p>
+<h2 id="-开始传包">🤗 开始传包！</h2>
+<p>至于传包就更加简单了，虽然官方所有文档上都在介绍如果使用命令行工具进行传送，但其实 Steam 已经为 Windows 系统下的开发者创建了图形工具，我们开头已经为这一工具进行解压，现在我们打开这一文件。</p>
+<p><img src="https://i.loli.net/2020/08/19/rK71nhLBGSXOxiM.jpg" alt="2020-08-19 11.25.44.jpg"></p>
+<p>操作步骤如下：</p>
+<ol>
+<li>填写 appid 和 description(描述部分可以不用填写，看具体情况)</li>
+<li>点击 Add depot 按钮（确认一下传送的 depot 准确无误）</li>
+<li>填写 Build Path folder (即为本地游戏目录的地址)</li>
+<li>填写 Steamworks SDK ContentBuilder Path(即为我们开头下载的 Steamworks SDK，相应的目录为 \steamworks_sdk_149\sdk\tools\ContentBuilder\， 你需要在文件系统中找到这一目录)</li>
+<li>填写 Login Password 信息（即为你的 Steam 账号密码）</li>
+<li>点击 Generate VDFs</li>
+<li>点击 Upload 即可完成操作</li>
+</ol>
+<p>恭喜！你的游戏包已经传输完成！</p>
+<blockquote>
+<p>只有当 Upload Log Output 这一栏中显示 Success! 才表示文件传输完成，如显示其他内容请检查以上步骤是否顺利完成。</p>
+</blockquote>
+<blockquote>
+<p>如上传成功后发现游戏因为设定问题无法成功引导启动，请查看设置部分“游戏执行文件地址”是否设定妥当。</p>
+</blockquote>
+
+		</div>
+
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stevenzeng-net';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+		
+
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/steamchina/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-08-19 11:34:13.459874 &#43;0800 CST m=&#43;0.063918949">2020</time> Steven Zeng
+			</span>
+		</footer>
+
+	
+
+    </body>    
+</html>

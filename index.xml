@@ -6,10 +6,19 @@
     <description>Recent content on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 19 Aug 2020 11:26:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 11:00:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.stevenzeng.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在 Steam 上发售你的游戏</title>
+      <link>https://www.stevenzeng.net/posts/releasegame/</link>
+      <pubDate>Thu, 29 Oct 2020 11:00:20 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/releasegame/</guid>
+      <description>如今，Steam 已经是一个完全自助平台，虽然完全自助，但在游戏发售之时仍需要进行两轮 Steam 的审核才能进行真正上线。 审核分别是： 商店页审核 游戏包审核 但和其他平台不同的是，Steam 的审核只进行这两轮，在这两</description>
+    </item>
     
     <item>
       <title>如何将游戏上传至 Steamworks</title>

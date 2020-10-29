@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 19 Aug 2020 11:26:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 11:00:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.stevenzeng.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Steam</title>
       <link>https://www.stevenzeng.net/tags/steam/</link>
-      <pubDate>Wed, 19 Aug 2020 11:26:00 +0800</pubDate>
+      <pubDate>Thu, 29 Oct 2020 11:00:20 +0800</pubDate>
       
       <guid>https://www.stevenzeng.net/tags/steam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>游戏发行</title>
+      <link>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E5%8F%91%E8%A1%8C/</link>
+      <pubDate>Thu, 29 Oct 2020 11:00:20 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E5%8F%91%E8%A1%8C/</guid>
       <description></description>
     </item>
     
@@ -44,15 +53,6 @@
       <pubDate>Thu, 06 Aug 2020 00:00:20 +0800</pubDate>
       
       <guid>https://www.stevenzeng.net/tags/%E8%92%B8%E6%B1%BD%E5%B9%B3%E5%8F%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>游戏发行</title>
-      <link>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E5%8F%91%E8%A1%8C/</link>
-      <pubDate>Mon, 20 Jul 2020 00:21:20 +0800</pubDate>
-      
-      <guid>https://www.stevenzeng.net/tags/%E6%B8%B8%E6%88%8F%E5%8F%91%E8%A1%8C/</guid>
       <description></description>
     </item>
     

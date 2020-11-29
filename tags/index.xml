@@ -6,15 +6,24 @@
     <description>Recent content in Tags on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 29 Oct 2020 11:00:20 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Nov 2020 14:00:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.stevenzeng.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Beta</title>
+      <link>https://www.stevenzeng.net/tags/beta/</link>
+      <pubDate>Sun, 29 Nov 2020 14:00:20 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/tags/beta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Steam</title>
       <link>https://www.stevenzeng.net/tags/steam/</link>
-      <pubDate>Thu, 29 Oct 2020 11:00:20 +0800</pubDate>
+      <pubDate>Sun, 29 Nov 2020 14:00:20 +0800</pubDate>
       
       <guid>https://www.stevenzeng.net/tags/steam/</guid>
       <description></description>

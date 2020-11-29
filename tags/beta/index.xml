@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beta on Steven Zeng</title>
+    <link>https://www.stevenzeng.net/tags/beta/</link>
+    <description>Recent content in Beta on Steven Zeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 29 Nov 2020 14:00:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.stevenzeng.net/tags/beta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>通过 Steam Playtest 进行游戏测试</title>
+      <link>https://www.stevenzeng.net/posts/steamplaytest/</link>
+      <pubDate>Sun, 29 Nov 2020 14:00:20 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/steamplaytest/</guid>
+      <description>这个月初（20年11月），Steam 在开发者后台开放了一则新的测试功能，Steam Playtes（官方名称：Steam 游戏测试，下简称 Playtest），由于官方文档里对于这项功能的描述可谓是惜字如金</description>
+    </item>
+    
+  </channel>
+</rss>

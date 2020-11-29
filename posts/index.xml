@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 29 Oct 2020 11:00:20 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Nov 2020 14:00:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.stevenzeng.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>通过 Steam Playtest 进行游戏测试</title>
+      <link>https://www.stevenzeng.net/posts/steamplaytest/</link>
+      <pubDate>Sun, 29 Nov 2020 14:00:20 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/steamplaytest/</guid>
+      <description>这个月初（20年11月），Steam 在开发者后台开放了一则新的测试功能，Steam Playtes（官方名称：Steam 游戏测试，下简称 Playtest），由于官方文档里对于这项功能的描述可谓是惜字如金</description>
+    </item>
     
     <item>
       <title>在 Steam 上发售你的游戏</title>

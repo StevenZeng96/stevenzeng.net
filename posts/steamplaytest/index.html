@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>通过 Steam Playtest 进行游戏测试 &middot; Steven Zeng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146588920-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146588920-1');
+		</script>
+
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Steven Zeng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/">
+                
+                <span>首页</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/tags/">
+                
+                <span>标签</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>关于</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span></span>
+        
+        <br>
+        <span>&nbsp;</span><time datetime="2020-11-29 14:00:20 &#43;0800 CST"></time>
+</div>
+		<h1 class="post-title">通过 Steam Playtest 进行游戏测试</h1>
+<div style="text-align: center; margin: 10px;">2020年11月29日</div>
+<div class="post-line"></div>
+
+		
+
+		<div class="content">
+			<p>这个月初（20年11月），Steam 在开发者后台开放了一则新的测试功能，Steam Playtes（官方名称：Steam 游戏测试，下简称 Playtest），由于官方文档里对于这项功能的描述可谓是惜字如金，对于一般开发者而言可谓十分不幸&hellip;</p>
+<p>我会在这篇文章中简要的告诉你：</p>
+<ol>
+<li>在 Steam 平台上有哪些测试游戏的方法</li>
+<li>什么是 playtest</li>
+<li>如何申请Playtest的资格</li>
+</ol>
+<h2 id="测试一个游戏能有什么方式">🎯测试一个游戏能有什么方式</h2>
+<p>对于一名游戏开发者而言，尤其是对于在 Steam 平台的开发者而言，通常进行游戏测试的方式其实并不算多，一般的方式有两种：</p>
+<ol>
+<li>对外开放免费试玩 Demo</li>
+<li>对已有玩家发放游戏 Key</li>
+</ol>
+<blockquote>
+<p>这两个方式各有优劣，前者会将游戏内容完全对外，容易获得用户，但在极为宽松的约束下很难获得用户反馈。对于后者而言，能够较为容易获得用户反馈的情况下进行，但问题便是游戏测试用户获取变成为了一大难点。</p>
+</blockquote>
+<h2 id="playtest-简单介绍">🎮Playtest 简单介绍</h2>
+<p>Playtest 是一个 Steam 平台的全新功能，在允许开发者不用管理测试Key的情况下，邀请玩家来测试自己的游戏。在当前的 Beta 版本的 Playtest 系统中，开发者将会拥有控制测试的各项权限（包含允许多少玩家访问游戏、何时开放给更多玩家游玩、测试开始时间以及测试结束时间）。</p>
+<p>在开启 Playtest 后，对于用户而言，在访问游戏页面时将能看到一个按钮用于请求访问权限（如下图），在点击后用户便可进入等待测试的队列（类似游戏预约），在开发者选择开放游玩后，玩家将会收到一则邮件通知游戏访问权限获得成功可立刻开玩。</p>
+<p><img src="https://i.loli.net/2020/11/29/SvF7zirqB3dEmP6.png" alt="image.png"></p>
+<p>对于开发者而言，在已经创建的 Playtest 页面上会多一则 Playtest 的控制选项（“管理您的 Steam 游戏测试”），开发者可以在这个按钮下的页面中控制测试用户人数。</p>
+<p><img src="https://i.loli.net/2020/11/29/FWwhpvkEUoOrdZT.png" alt="image.png"></p>
+<p>而二级菜单则是长得这样，第一栏中显示的是目前已经获得游戏测试资格的玩家数量，第二栏是目前正在等待测试的玩家量，而第三栏则是开发者手动邀请的玩家量（是的，Playtest 也有自己的 Key，因此你还是通过老方式邀请玩家进行测试）</p>
+<p><img src="https://i.loli.net/2020/11/29/U25PWfVrdluLTB9.png" alt="image.png"></p>
+<h2 id="playtest-资格申请">🎮Playtest 资格申请</h2>
+<p>由于当前 Playtest 仍然属于一项 Beta 测试阶段的功能，因此想要体验此功能的开发者需要向 Steam 进行申请后才会拥有进行 Playtest 的相关权限（若使用期间发生任何问题也是需要通过发信的方式进行沟通解决）。如果你想要申请这一权限的话可以<a href="https://help.steampowered.com/zh-cn/wizard/HelpWithPublishing">点击这里</a>，直接访问工单系统与 Steam 团队进行沟通（和以往一样，需要使用英文进行沟通以便加快沟通速度）。</p>
+<p>获得这一资格，你需要向 Steam 团队提供的资料有：</p>
+<ol>
+<li>开始 Playtest 的时间</li>
+<li>希望通过 Playtest 获得的用户反馈数据是？</li>
+</ol>
+<p>沟通完毕后，Steam 团队就将给你的游戏开放 Playtest 的相关权限，你便可以开始准备测试了！</p>
+<blockquote>
+<p>完成此步后，你还需处理和 Demo 上架相同的手续。限于篇幅不在此赘述，有机会再和各位分享。</p>
+</blockquote>
+<h2 id="小结">🙆‍♂️小结</h2>
+<p>相较以往的测试方式，Playtest确实能够给人提供一些不一样的测试手段，但由于当前 Steam 并没有为 Playtest 配置相应的资源推荐，开启 Playtest 并不会给你带来更大的游戏曝光量。如果希望能够获得更大的测试成效，你需以“预约”为核心重新安排测试方案以便达成目的，而这又是另一个话题了。</p>
+
+		</div>
+
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'stevenzeng-net';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+		
+
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/releasegame/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-11-29 20:10:08.417765 &#43;0800 CST m=&#43;0.066157228">2020</time> Steven Zeng
+			</span>
+		</footer>
+
+	
+
+    </body>    
+</html>

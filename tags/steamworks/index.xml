@@ -6,10 +6,15 @@
     <description>Recent content in Steamworks on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 19 Aug 2020 11:26:00 +0800</lastBuildDate>
-    
-	<atom:link href="https://www.stevenzeng.net/tags/steamworks/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 29 Dec 2021 09:28:00 +0800</lastBuildDate><atom:link href="https://www.stevenzeng.net/tags/steamworks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何为游戏打上 Steam DRM 保护</title>
+      <link>https://www.stevenzeng.net/posts/adddrmtoyourgame/</link>
+      <pubDate>Wed, 29 Dec 2021 09:28:00 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/adddrmtoyourgame/</guid>
+      <description>🧐 什么是 Steam DRM Steam DRM 是 Steam 平台的重要工具之一，其主要作用为校验玩家是否在 Steam 平台上进行了购买，以此保障游戏开发者权益。在完成了 Steam DRM 打包后，若玩家双击游戏，游戏将会在进行运行前进行启动 Steam 进行身份校验以此保护游戏</description>
+    </item>
     
     <item>
       <title>如何将游戏上传至 Steamworks</title>

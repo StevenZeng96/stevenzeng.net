@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+		
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146588920-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>如何为游戏打上 Steam DRM 保护 &middot; Steven Zeng</title>
+
+		
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/style.css">
+		
+		<link rel="icon" href="favicon.ico" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					
+						<h2 class="nav-title">Steven Zeng</h2>
+					
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/">
+                
+                <span>首页</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/tags/">
+                
+                <span>标签</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>关于</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<h1 class="post-title">如何为游戏打上 Steam DRM 保护</h1>
+<div style="text-align: center; margin: 10px;">2021年12月29日</div>
+<div class="post-line"></div>
+
+		
+
+		<h2 id="-什么是-steam-drm">🧐 什么是 Steam DRM</h2>
+<p>Steam DRM 是 Steam 平台的重要工具之一，其主要作用为校验玩家是否在 Steam 平台上进行了购买，以此保障游戏开发者权益。在完成了 Steam DRM 打包后，若玩家双击游戏，游戏将会在进行运行前进行启动 Steam 进行身份校验以此保护游戏免受盗版问题。</p>
+<blockquote>
+<p>但请各位注意，Steam DRM 并非解决盗版问题的良方。由于Steam DRM 给游戏将会带来的仅为最基础的游戏保护，它将会能够避免你开发完成的游戏在没有任何保护的情况下轻轻松松地复制走，而非提供绝对的游戏保护。</p>
+</blockquote>
+<h2 id="-steam-drm-命令-drm_wrap">🤔 Steam DRM 命令 <code>drm_wrap</code></h2>
+<p>Steam DRM 包含在了 Steam CMD 的命令之中，Steam DRM 打包命令代码 <code>drm_wrap</code>，该命令的组成部分为</p>
+<p><code> drm_wrap [appid] [无 DRM 保护的源游戏执行文件] [打包完毕后的游戏执行文件] [打包工具] [flags]</code></p>
+<p>各项目的含义为：</p>
+<ul>
+<li><strong>appid</strong>: Steam 的游戏 ID</li>
+<li><strong>无 DRM 保护的源游戏执行文件</strong>：你可以使用绝对路径或相对路径，如果遇到文件名中含有空格的部分，请记得使用引号（''）继续转义</li>
+<li><strong>打包完毕后的游戏执行文件</strong>：你可以使用绝对路径或相对路径，这一路径将会生成游戏打包完毕后的可执行文件。</li>
+<li><strong>打包工具</strong>：打包工具拥有两个版本
+<ul>
+<li>drmtoolp: 新版</li>
+<li>drmtool: win32 旧版</li>
+</ul>
+</li>
+<li><strong>flags</strong>：表示打包模式
+<ul>
+<li>0：标准打包（保护能力最强）</li>
+<li>6：兼容性打包</li>
+<li>32：跳过 debugger 校验</li>
+<li>38：使用兼容模式并跳过 debugger 校验（保护能力最差）</li>
+</ul>
+</li>
+</ul>
+<h3 id="获得-steam-cmd">获得 Steam CMD</h3>
+<p>访问 Steamworks Documentation 文档库，在 <a href="https://partner.steamgames.com/doc/sdk">Steamworks SDK 页面</a>下找到 Download the latest version of the Steamworks SDK。</p>
+<blockquote>
+<p>你也可以不用找，直接点击<a href="https://partner.steamgames.com/downloads/steamworks_sdk.zip">这里</a>下载 SDK 文件</p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/08/19/n7hjmryvAHPsM9B.png" alt="image.png"></p>
+<p>下载完成进行解压后，你就可以得到完整的 Steam 开发工具，而 Steam CMD 则位于 <code>/sdk/tools/ContentBuilder/builder</code>文件夹中</p>
+<p><img src="https://s2.loli.net/2021/12/29/n2JhXlEI19amHFf.png" alt="image.png"></p>
+<h2 id="-steam-drm-打包使用示例">✌ Steam DRM 打包使用示例</h2>
+<p>下面演示的是使用 Steam DRM 新版本标准模式下进行打包的方式， 头一次使用时有两个组成部分：</p>
+<ul>
+<li>为打包创建 <code>.bat</code> 文件</li>
+<li>双击运行该文件（或使用 CMD 或 <a href="https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2">PowerShell</a> 打开）</li>
+</ul>
+<h3 id="1-bat文件创建">1. <code>.bat</code>文件创建</h3>
+<p>打开文本编辑应用（记事本或 <a href="https://code.visualstudio.com/">Visual Studio Code</a> 等任意代码编辑器），复制粘贴如下内容并保存至任意地址。</p>
+<p>复制粘贴前你需要注意的内容为：</p>
+<ul>
+<li>你将该 .bat 文件保存到了  Steamworks SDK 中 ContentBuilder 文件夹中</li>
+<li>你的 Steam 开发账号为 steamaccount（该账号拥有此）</li>
+<li>你的 Steam 开发账号密码为 steampassword</li>
+<li>你的游戏 AppID 为 480</li>
+<li>你的游戏源文件路径为  <code>F:\game\game.exe</code></li>
+<li>你打包完毕后的游戏路径为（我这边的选择为打包完毕后的游戏直接覆盖掉了源文件） <code>F:\game\game.exe</code></li>
+<li>你决定叫这个 DRM 打包工具叫 <code>drm.bat</code>!</li>
+</ul>
+<p>在进行了以上内容选择后，<code>drm.bat</code> 文件内容如下，并保存到 ContentBuilder 文件夹中</p>
+<p><code>builder\steamcmd.exe +login steamaccount steampassword +drm_wrap 480 &quot;F:\game\game.exe&quot; &quot;F:\game\game.exe&quot; drmtoolp 0 </code></p>
+<p><img src="https://s2.loli.net/2021/12/29/Aw5y4btQ6BdgiGj.png" alt="image.png"></p>
+<blockquote>
+<p>将 <code>drm.bat</code> 放到 ContentBuilder 文件夹中才可以保障该命令能够正常运行，若放到其他文件夹下则需要更改 <code>builder\steamcmd.exe</code> 的部分</p>
+</blockquote>
+<blockquote>
+<p>Tip: 你也可以在这一串文字后加上 <code>+quit</code>来自动关闭窗口，但这一操作将不会给你带来诸如账号密码错误等任何错误反馈信息，你可以在确认以上指令可以正常继续后加上自动关闭的功能。</p>
+</blockquote>
+<h3 id="2-双击-drmbat">2. 双击 <code>drm.bat</code></h3>
+<p>如果你看到如下反馈，则证明该打包工作成功完成了！恭喜！</p>
+<p><img src="https://s2.loli.net/2021/12/29/C5OIzwEQmbNt4R7.png" alt="image.png"></p>
+<h2 id="后续步骤">后续步骤</h2>
+<p>在完成 DRM 打包后，接下来的操作便是进行游戏包上传了，关于游戏上传的部分你可以参考</p>
+<ul>
+<li><a href="../uploadtosteamworks">如何将游戏上传至 Steamworks</a></li>
+</ul>
+
+
+		
+	</div>
+
+	<div id="disqus_thread"></div>
+	<script>
+		
+
+		
+
+		(function() { 
+		var d = document, s = d.createElement('script');
+		s.src = 'https://stevenzeng-net.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+	<div class="pagination">
+		<a href="/posts/steamplaytest/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2021-12-29 10:58:47.859516 &#43;0800 CST m=&#43;0.072683501">2021</time> Steven. 
+			</span>
+		</footer>
+
+    </body>
+</html>

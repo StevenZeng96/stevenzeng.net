@@ -21,16 +21,19 @@ if (!doNotTrack) {
 
 		
 		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/fonts.css">
-		<link rel="stylesheet" href="/css/style.css">
 		
-		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/font.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
 		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		<script src="/js/darkmode.js"></script>
 	</head>
 
     <body>
@@ -72,12 +75,23 @@ if (!doNotTrack) {
 			</div>
 		</nav>
 
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
         
 
 <main>
-	<div class="post">
+	
+
+
+        <div class="post">
 		<h1 class="post-title">如何将游戏上传至 Steamworks</h1>
-<div style="text-align: center; margin: 10px;">2020年8月19日</div>
+<div class="post-info">
+    <br>
+    <time>2020年08月19日</time>
+</div>
+<br>
 <div class="post-line"></div>
 
 		
@@ -87,7 +101,7 @@ if (!doNotTrack) {
 <p>由于 Steam 官方提供了带 GUI 的对应工具，因此传包工作在 Windows 系统下进行最为简单高效。</p>
 </blockquote>
 <blockquote>
-<p>当然，如果你正在使用 Linux 或者 macOS 系统，你也是可以独自完成传包工作的，你的上传工作可以参考官方提供的逐步视频教程(<a href="https://youtu.be/SoNH-v6aU9Q">YouTube</a>)</p>
+<p>当然，如果你正在使用 Linux 或者 macOS 系统，你也是可以独自完成传包工作的，你的上传工作可以参考官方提供的逐步视频教程(<a href="https://youtu.be/SoNH-v6aU9Q" target="_blank" rel="noopener">YouTube</a>)</p>
 </blockquote>
 <h2 id="-准备工作">🤖 准备工作</h2>
 <p>在完成游戏上传工作之前，你需要从 Steam 平台获取以下几样东西作为传包的必要条件：</p>
@@ -98,9 +112,9 @@ if (!doNotTrack) {
 <li>指定可执行文件地址 - 用于 Steam 引导启动游戏</li>
 </ol>
 <h3 id="一steam-sdk">一、Steam SDK</h3>
-<p>访问 Steamworks Documentation 文档库，在 <a href="https://partner.steamgames.com/doc/sdk">Steamworks SDK 页面</a>下找到 Download the latest version of the Steamworks SDK。</p>
+<p>访问 Steamworks Documentation 文档库，在 <a href="https://partner.steamgames.com/doc/sdk" target="_blank" rel="noopener">Steamworks SDK 页面</a>下找到 Download the latest version of the Steamworks SDK。</p>
 <blockquote>
-<p>你也可以不用找，直接点击<a href="https://partner.steamgames.com/downloads/steamworks_sdk.zip">这里</a>下载 SDK 文件</p>
+<p>你也可以不用找，直接点击<a href="https://partner.steamgames.com/downloads/steamworks_sdk.zip" target="_blank" rel="noopener">这里</a>下载 SDK 文件</p>
 </blockquote>
 <p><img src="https://i.loli.net/2020/08/19/n7hjmryvAHPsM9B.png" alt="image.png"></p>
 <p>下载完成进行解压后，你就可以得到完整的 Steam 开发工具，但如果你的目标和我一样，只是传包而已的话，那么你大可不必关注该文件夹下的其他文件，你需要进行关注的只有两个部分：</p>
@@ -172,21 +186,6 @@ if (!doNotTrack) {
 		
 	</div>
 
-	<div id="disqus_thread"></div>
-	<script>
-		
-
-		
-
-		(function() { 
-		var d = document, s = d.createElement('script');
-		s.src = 'https://stevenzeng-net.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 	<div class="pagination">
 		<a href="/posts/steamchina/" class="left arrow">&#8592;</a>
 		<a href="/posts/releasegame/" class="right arrow">&#8594;</a>
@@ -199,7 +198,7 @@ if (!doNotTrack) {
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2021-12-29 11:03:19.7659959 &#43;0800 CST m=&#43;0.076398301">2021</time> Steven. 
+			&copy; <time datetime="2023-04-23 15:06:26.120534 &#43;0800 HKT m=&#43;0.055882001">2023</time> Steven. 
 			</span>
 		</footer>
 

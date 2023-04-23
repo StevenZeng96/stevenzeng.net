@@ -21,16 +21,19 @@ if (!doNotTrack) {
 
 		
 		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/fonts.css">
-		<link rel="stylesheet" href="/css/style.css">
 		
-		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/font.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
 		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		<script src="/js/darkmode.js"></script>
 	</head>
 
     <body>
@@ -72,12 +75,23 @@ if (!doNotTrack) {
 			</div>
 		</nav>
 
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
         
 
 <main>
-	<div class="post">
+	
+
+
+        <div class="post">
 		<h1 class="post-title">通过 Steam Playtest 进行游戏测试</h1>
-<div style="text-align: center; margin: 10px;">2020年11月29日</div>
+<div class="post-info">
+    <br>
+    <time>2020年11月29日</time>
+</div>
+<br>
 <div class="post-line"></div>
 
 		
@@ -107,7 +121,7 @@ if (!doNotTrack) {
 <p>而二级菜单则是长得这样，第一栏中显示的是目前已经获得游戏测试资格的玩家数量，第二栏是目前正在等待测试的玩家量，而第三栏则是开发者手动邀请的玩家量（是的，Playtest 也有自己的 Key，因此你还是通过老方式邀请玩家进行测试）</p>
 <p><img src="https://i.loli.net/2020/11/29/U25PWfVrdluLTB9.png" alt="image.png"></p>
 <h2 id="playtest-资格申请">🎮Playtest 资格申请</h2>
-<p>由于当前 Playtest 仍然属于一项 Beta 测试阶段的功能，因此想要体验此功能的开发者需要向 Steam 进行申请后才会拥有进行 Playtest 的相关权限（若使用期间发生任何问题也是需要通过发信的方式进行沟通解决）。如果你想要申请这一权限的话可以<a href="https://help.steampowered.com/zh-cn/wizard/HelpWithPublishing">点击这里</a>，直接访问工单系统与 Steam 团队进行沟通（和以往一样，需要使用英文进行沟通以便加快沟通速度）。</p>
+<p>由于当前 Playtest 仍然属于一项 Beta 测试阶段的功能，因此想要体验此功能的开发者需要向 Steam 进行申请后才会拥有进行 Playtest 的相关权限（若使用期间发生任何问题也是需要通过发信的方式进行沟通解决）。如果你想要申请这一权限的话可以<a href="https://help.steampowered.com/zh-cn/wizard/HelpWithPublishing" target="_blank" rel="noopener">点击这里</a>，直接访问工单系统与 Steam 团队进行沟通（和以往一样，需要使用英文进行沟通以便加快沟通速度）。</p>
 <p>获得这一资格，你需要向 Steam 团队提供的资料有：</p>
 <ol>
 <li>开始 Playtest 的时间</li>
@@ -124,21 +138,6 @@ if (!doNotTrack) {
 		
 	</div>
 
-	<div id="disqus_thread"></div>
-	<script>
-		
-
-		
-
-		(function() { 
-		var d = document, s = d.createElement('script');
-		s.src = 'https://stevenzeng-net.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 	<div class="pagination">
 		<a href="/posts/releasegame/" class="left arrow">&#8592;</a>
 		<a href="/posts/adddrmtoyourgame/" class="right arrow">&#8594;</a>
@@ -151,7 +150,7 @@ if (!doNotTrack) {
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2021-12-29 11:03:19.7730023 &#43;0800 CST m=&#43;0.083404701">2021</time> Steven. 
+			&copy; <time datetime="2023-04-23 15:06:26.112894 &#43;0800 HKT m=&#43;0.048242251">2023</time> Steven. 
 			</span>
 		</footer>
 

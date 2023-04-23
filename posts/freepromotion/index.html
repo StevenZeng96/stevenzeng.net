@@ -21,16 +21,19 @@ if (!doNotTrack) {
 
 		
 		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/fonts.css">
-		<link rel="stylesheet" href="/css/style.css">
 		
-		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/font.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
 		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		<script src="/js/darkmode.js"></script>
 	</head>
 
     <body>
@@ -72,19 +75,30 @@ if (!doNotTrack) {
 			</div>
 		</nav>
 
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
         
 
 <main>
-	<div class="post">
+	
+
+
+        <div class="post">
 		<h1 class="post-title">如何不花一毛钱做独立游戏营销</h1>
-<div style="text-align: center; margin: 10px;">2020年6月21日</div>
+<div class="post-info">
+    <br>
+    <time>2020年06月21日</time>
+</div>
+<br>
 <div class="post-line"></div>
 
 		
 
 		<blockquote>
 <p>文章来自独立开发者 Kitfox Games 的 Medium 博文</p>
-<p>为使行文通畅有对原文进行部分删减，文章首发于微博 <a href="https://weibo.com/u/6897882296?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1">@游戏原创力量</a></p>
+<p>为使行文通畅有对原文进行部分删减，文章首发于微博 <a href="https://weibo.com/u/6897882296?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1" target="_blank" rel="noopener">@游戏原创力量</a></p>
 <p>译/ Steven Zeng</p>
 </blockquote>
 <p>每天，成千上万的游戏以高市场营销的姿态投入到了市场当中。你该如何与他们竞争？你该如何用0元的营销预算与他们一较高下？</p>
@@ -101,7 +115,7 @@ if (!doNotTrack) {
 <p><img src="https://i.loli.net/2020/06/22/BXl8ynmYAHP6aVW.png" alt="image.png"></p>
 <blockquote>
 <p>看见 -&gt; 思考 -&gt; 行动（购买） -&gt; 关注（购后体验）
-<a href="https://www.bluecorona.com/blog/new-digital-marketing-funnel-strategies">https://www.bluecorona.com/blog/new-digital-marketing-funnel-strategies</a></p>
+<a href="https://www.bluecorona.com/blog/new-digital-marketing-funnel-strategies" target="_blank" rel="noopener">https://www.bluecorona.com/blog/new-digital-marketing-funnel-strategies</a></p>
 </blockquote>
 <p>我现在提及此事，其实是因为无论我做什么市场营销活动，我都会留意我当前做的行动处于购买活动的哪一个环节。举例而言，在 Twitter 上发文说游戏就是让玩家们看到我们的游戏，处于第一环节，而我们给玩家们发放 Newsletter 则是让玩家思考我们的游戏，处于第二环节。</p>
 <p>我希望你能够将这个流程图铭记在心，因为如果你心中没有谱的话，那么你的市场营销行动就将容易走歪且容易聚集在某一点上纠结不清。举个例子，当你做了很多曝光的行动，在第一个看见环节花了很多精力，但没有在行动购买环节投入精力的话，你就需要平衡一下你的营销行为了。</p>
@@ -274,27 +288,12 @@ if (!doNotTrack) {
 <blockquote>
 <p>原文发布于 Kitfox Games Medium
 The $0 Marketing Game Guide – Kitfox Games
-<a href="https://medium.com/kitfox-games/the-0-marketing-game-guide-e649a5ac83f4">https://medium.com/kitfox-games/the-0-marketing-game-guide-e649a5ac83f4</a></p>
+<a href="https://medium.com/kitfox-games/the-0-marketing-game-guide-e649a5ac83f4" target="_blank" rel="noopener">https://medium.com/kitfox-games/the-0-marketing-game-guide-e649a5ac83f4</a></p>
 </blockquote>
 
 
 		
 	</div>
-
-	<div id="disqus_thread"></div>
-	<script>
-		
-
-		
-
-		(function() { 
-		var d = document, s = d.createElement('script');
-		s.src = 'https://stevenzeng-net.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 	<div class="pagination">
 		<a href="/posts/androidtv/" class="left arrow">&#8592;</a>
@@ -308,7 +307,7 @@ The $0 Marketing Game Guide – Kitfox Games
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2021-12-29 11:03:19.7730023 &#43;0800 CST m=&#43;0.083404701">2021</time> Steven. 
+			&copy; <time datetime="2023-04-23 15:06:26.110941 &#43;0800 HKT m=&#43;0.046289668">2023</time> Steven. 
 			</span>
 		</footer>
 

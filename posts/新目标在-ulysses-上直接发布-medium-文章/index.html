@@ -21,16 +21,19 @@ if (!doNotTrack) {
 
 		
 		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/fonts.css">
-		<link rel="stylesheet" href="/css/style.css">
 		
-		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/font.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
 		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		<script src="/js/darkmode.js"></script>
 	</head>
 
     <body>
@@ -72,12 +75,23 @@ if (!doNotTrack) {
 			</div>
 		</nav>
 
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
         
 
 <main>
-	<div class="post">
+	
+
+
+        <div class="post">
 		<h1 class="post-title">新目标，在 Ulysses 上直接发布 Medium 文章</h1>
-<div style="text-align: center; margin: 10px;">2019年5月5日</div>
+<div class="post-info">
+    <br>
+    <time>2019年05月05日</time>
+</div>
+<br>
 <div class="post-line"></div>
 
 		
@@ -85,14 +99,14 @@ if (!doNotTrack) {
 		<p>仔细一想已经有很长一段时间没在 Medium.com 上发文章了。</p>
 <p>因为此前将 XMLinkUP 的文章从 Medium 迁移到了 Wordpress，然后建立了 xmlinkup.com 专门用来存放 XMLinkUP 的文章，Medium 这边就显得干净了不少。既然空着，那就不如放点自己随手写的玩意吧？说干就干。</p>
 <h2 id="本地写作">本地写作！</h2>
-<p>不过对于我这种折腾来折腾去的人而言，首先第一个要解决的事情就是在 Medium 上面直接使用日常使用的 <a href="https://ulysses.app">Ulysses </a>完成撰写任务。</p>
+<p>不过对于我这种折腾来折腾去的人而言，首先第一个要解决的事情就是在 Medium 上面直接使用日常使用的 <a href="https://ulysses.app" target="_blank" rel="noopener">Ulysses </a>完成撰写任务。</p>
 <p>至于为何“要用 Ulysses 编辑”，这一点相关的讨论那就相当于选择要在“本地”完成你的写作任务还是选择在“云端”完成你的写作任务，两者吵起来估计能够吵上三天三夜。</p>
 <p>对于我个人而言，这两种写作方式各有各的好处，主要看你自己的使用习惯，而我更加喜欢在本地完成所有的撰写任务。</p>
 <h2 id="如何操作">如何操作</h2>
 <p>至于如何操作这就是一件非常简单的事情了！</p>
 <p>由于 Ulysses 自身支持 Medium 的文章发布功能，因此你需要做的事情只有前往 偏好设置 - 账户 - 添加 Medium 账户 然后填入 Intergration Token 即可。</p>
 <p>但是由于 Medium 站并非对所有人都提供 Token，因此在这里需要你前往 Medium 的帮助页面与客服联系完成接下来的操作。</p>
-<p>具体操作便是提交 <a href="https://help.medium.com/hc/en-us/requests/new?ticket_form_id=360000821214">API 请求工单</a>，然后将你的 Email 地址、Medium Username 以及申请理由逐项填入即可。</p>
+<p>具体操作便是提交 <a href="https://help.medium.com/hc/en-us/requests/new?ticket_form_id=360000821214" target="_blank" rel="noopener">API 请求工单</a>，然后将你的 Email 地址、Medium Username 以及申请理由逐项填入即可。</p>
 <blockquote>
 <p>我的申请理由如下，供您参考
 Hey there, I want to use Medium form Ulysses. Can I get the Medium API access? I want to use the Medium as my blog again.</p>
@@ -106,21 +120,6 @@ Hey there, I want to use Medium form Ulysses. Can I get the Medium API access? I
 		
 	</div>
 
-	<div id="disqus_thread"></div>
-	<script>
-		
-
-		
-
-		(function() { 
-		var d = document, s = d.createElement('script');
-		s.src = 'https://stevenzeng-net.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 	<div class="pagination">
 		<a href="/posts/jingyong/" class="left arrow">&#8592;</a>
 		<a href="/posts/%E6%88%91%E5%B8%B8%E5%90%AC%E7%9A%84-podcast-%E6%8E%A8%E8%8D%90%E5%90%88%E9%9B%86/" class="right arrow">&#8594;</a>
@@ -133,7 +132,7 @@ Hey there, I want to use Medium form Ulysses. Can I get the Medium API access? I
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2021-12-29 11:03:19.7679981 &#43;0800 CST m=&#43;0.078400501">2021</time> Steven. 
+			&copy; <time datetime="2023-04-23 15:06:26.113674 &#43;0800 HKT m=&#43;0.049022709">2023</time> Steven. 
 			</span>
 		</footer>
 

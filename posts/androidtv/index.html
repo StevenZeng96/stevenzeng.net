@@ -21,16 +21,19 @@ if (!doNotTrack) {
 
 		
 		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/fonts.css">
-		<link rel="stylesheet" href="/css/style.css">
 		
-		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/font.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
 		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		<script src="/js/darkmode.js"></script>
 	</head>
 
     <body>
@@ -72,12 +75,23 @@ if (!doNotTrack) {
 			</div>
 		</nav>
 
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
         
 
 <main>
-	<div class="post">
+	
+
+
+        <div class="post">
 		<h1 class="post-title">在 Android TV 上远程安装应用</h1>
-<div style="text-align: center; margin: 10px;">2020年1月30日</div>
+<div class="post-info">
+    <br>
+    <time>2020年01月30日</time>
+</div>
+<br>
 <div class="post-line"></div>
 
 		
@@ -94,8 +108,8 @@ if (!doNotTrack) {
 <h2 id="准备工具">准备工具</h2>
 <p><img src="https://i.loli.net/2020/01/31/Pdo4AzG8qWZ5XrS.png" alt=""></p>
 <ul>
-<li><a href="https://developer.android.com/studio/releases/platform-tools.html">Android Denbug Bridge</a></li>
-<li><a href="https://www.apkmirror.com/">你需要安装的应用 APK</a></li>
+<li><a href="https://developer.android.com/studio/releases/platform-tools.html" target="_blank" rel="noopener">Android Denbug Bridge</a></li>
+<li><a href="https://www.apkmirror.com/" target="_blank" rel="noopener">你需要安装的应用 APK</a></li>
 <li>一台 Android 电视（开启开发者模式，并开启 ADB 调试）</li>
 <li>你的电脑（需要和 Android 电视处于同一 Wifi 环境之下）</li>
 </ul>
@@ -139,21 +153,6 @@ if (!doNotTrack) {
 		
 	</div>
 
-	<div id="disqus_thread"></div>
-	<script>
-		
-
-		
-
-		(function() { 
-		var d = document, s = d.createElement('script');
-		s.src = 'https://stevenzeng-net.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 	<div class="pagination">
 		<a href="/posts/steam-library-beta-%E6%B5%8B%E8%AF%95/" class="left arrow">&#8592;</a>
 		<a href="/posts/freepromotion/" class="right arrow">&#8594;</a>
@@ -166,7 +165,7 @@ if (!doNotTrack) {
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2021-12-29 11:03:19.7639941 &#43;0800 CST m=&#43;0.074396501">2021</time> Steven. 
+			&copy; <time datetime="2023-04-23 15:06:26.110924 &#43;0800 HKT m=&#43;0.046271834">2023</time> Steven. 
 			</span>
 		</footer>
 

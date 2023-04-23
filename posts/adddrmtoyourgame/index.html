@@ -21,16 +21,19 @@ if (!doNotTrack) {
 
 		
 		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/fonts.css">
-		<link rel="stylesheet" href="/css/style.css">
 		
-		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/font.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
 		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		<script src="/js/darkmode.js"></script>
 	</head>
 
     <body>
@@ -72,12 +75,23 @@ if (!doNotTrack) {
 			</div>
 		</nav>
 
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
         
 
 <main>
-	<div class="post">
+	
+
+
+        <div class="post">
 		<h1 class="post-title">如何为游戏打上 Steam DRM 保护</h1>
-<div style="text-align: center; margin: 10px;">2021年12月29日</div>
+<div class="post-info">
+    <br>
+    <time>2021年12月29日</time>
+</div>
+<br>
 <div class="post-line"></div>
 
 		
@@ -93,7 +107,7 @@ if (!doNotTrack) {
 <p>各项目的含义为：</p>
 <ul>
 <li><strong>appid</strong>: Steam 的游戏 ID</li>
-<li><strong>无 DRM 保护的源游戏执行文件</strong>：你可以使用绝对路径或相对路径，如果遇到文件名中含有空格的部分，请记得使用引号（''）转义</li>
+<li><strong>无 DRM 保护的源游戏执行文件</strong>：你可以使用绝对路径或相对路径，如果遇到文件名中含有空格的部分，请记得使用引号（&rsquo;&rsquo;）转义</li>
 <li><strong>打包完毕后的游戏执行文件</strong>：你可以使用绝对路径或相对路径，这一路径将会生成游戏打包完毕后的可执行文件。</li>
 <li><strong>打包工具</strong>：打包工具拥有两个版本
 <ul>
@@ -111,21 +125,21 @@ if (!doNotTrack) {
 </li>
 </ul>
 <h3 id="获得-steam-cmd">获得 Steam CMD</h3>
-<p>访问 Steamworks Documentation 文档库，在 <a href="https://partner.steamgames.com/doc/sdk">Steamworks SDK 页面</a>下找到 Download the latest version of the Steamworks SDK。</p>
+<p>访问 Steamworks Documentation 文档库，在 <a href="https://partner.steamgames.com/doc/sdk" target="_blank" rel="noopener">Steamworks SDK 页面</a>下找到 Download the latest version of the Steamworks SDK。</p>
 <blockquote>
-<p>你也可以不用找，直接点击<a href="https://partner.steamgames.com/downloads/steamworks_sdk.zip">这里</a>下载 SDK 文件</p>
+<p>你也可以不用找，直接点击<a href="https://partner.steamgames.com/downloads/steamworks_sdk.zip" target="_blank" rel="noopener">这里</a>下载 SDK 文件</p>
 </blockquote>
 <p><img src="https://i.loli.net/2020/08/19/n7hjmryvAHPsM9B.png" alt="image.png"></p>
 <p>下载完成进行解压后，你就可以得到完整的 Steam 开发工具，而 Steam CMD 则位于 <code>/sdk/tools/ContentBuilder/builder</code>文件夹中</p>
 <p><img src="https://s2.loli.net/2021/12/29/n2JhXlEI19amHFf.png" alt="image.png"></p>
-<h2 id="-steam-drm-打包使用示例">✌ Steam DRM 打包使用示例</h2>
+<h2 id="-steam-drm-打包使用示例">🛠️ Steam DRM 打包使用示例</h2>
 <p>下面演示的是使用 Steam DRM 新版本标准模式下进行打包的方式， 头一次使用时有两个组成部分：</p>
 <ul>
 <li>为打包创建 <code>.bat</code> 文件</li>
-<li>双击运行该文件（或使用 CMD 或 <a href="https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2">PowerShell</a> 打开）</li>
+<li>双击运行该文件（或使用 CMD 或 <a href="https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2" target="_blank" rel="noopener">PowerShell</a> 打开）</li>
 </ul>
 <h3 id="1-bat文件创建">1. <code>.bat</code>文件创建</h3>
-<p>打开文本编辑应用（记事本或 <a href="https://code.visualstudio.com/">Visual Studio Code</a> 等任意代码编辑器），复制粘贴如下内容并保存至任意地址。</p>
+<p>打开文本编辑应用（记事本或 <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a> 等任意代码编辑器），复制粘贴如下内容并保存至任意地址。</p>
 <p>复制粘贴前你需要注意的内容为：</p>
 <ul>
 <li>你将该 .bat 文件保存到了  Steamworks SDK 中 ContentBuilder 文件夹中</li>
@@ -148,6 +162,13 @@ if (!doNotTrack) {
 <h3 id="2-双击-drmbat">2. 双击 <code>drm.bat</code></h3>
 <p>如果你看到如下反馈，则证明该打包工作成功完成了！恭喜！</p>
 <p><img src="https://s2.loli.net/2021/12/29/C5OIzwEQmbNt4R7.png" alt="image.png"></p>
+<h2 id="补充内容为-macos-游戏添加-drm">🍎补充内容：为 macOS 游戏添加 DRM</h2>
+<p>上文所提及的 Steam DRM 工具并不适用于所有平台和所有的游戏执行文件，如果需要对 macOS 系统上的游戏添加 DRM， 可以调用以下两个 API 实现 Steam DRM 的主要功能</p>
+<p>需要参考的 API 有：</p>
+<ul>
+<li><a href="https://partner.steamgames.com/doc/api/steam_api#SteamAPI_RestartAppIfNecessary" target="_blank" rel="noopener">SteamAPI_RestartAppIfNecessary</a>: 在游戏启动的时候使用 AppID 调用这条 API 能够保证游戏通过 Steam 客户端启用的是使用的这个 AppID</li>
+<li><a href="https://partner.steamgames.com/doc/api/ISteamApps#BIsSubscribedApp" target="_blank" rel="noopener">ISteamApps::BIsSubscribedApp</a>:在游戏里头使用 AppID 调用这一条 API 能够确保登陆 Steam 的用户拥有游玩这个 AppID 的权限。（这一条在保护游戏方面不是必须，但可以给游戏多一层保护）</li>
+</ul>
 <h2 id="后续步骤">后续步骤</h2>
 <p>在完成 DRM 打包后，接下来的操作便是进行游戏包上传了，关于游戏上传的部分你可以参考</p>
 <ul>
@@ -157,21 +178,6 @@ if (!doNotTrack) {
 
 		
 	</div>
-
-	<div id="disqus_thread"></div>
-	<script>
-		
-
-		
-
-		(function() { 
-		var d = document, s = d.createElement('script');
-		s.src = 'https://stevenzeng-net.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 	<div class="pagination">
 		<a href="/posts/steamplaytest/" class="left arrow">&#8592;</a>
@@ -184,7 +190,7 @@ if (!doNotTrack) {
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2021-12-29 13:57:48.7753114 &#43;0800 CST m=&#43;0.076849501">2021</time> Steven. 
+			&copy; <time datetime="2023-04-23 15:06:26.110976 &#43;0800 HKT m=&#43;0.046324001">2023</time> Steven. 
 			</span>
 		</footer>
 

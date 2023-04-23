@@ -21,16 +21,19 @@ if (!doNotTrack) {
 
 		
 		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/fonts.css">
-		<link rel="stylesheet" href="/css/style.css">
 		
-		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/font.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
 		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		<script src="/js/darkmode.js"></script>
 	</head>
 
     <body>
@@ -72,12 +75,23 @@ if (!doNotTrack) {
 			</div>
 		</nav>
 
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
         
 
 <main>
-	<div class="post">
+	
+
+
+        <div class="post">
 		<h1 class="post-title">Steam Library Beta 测试</h1>
-<div style="text-align: center; margin: 10px;">2019年9月18日</div>
+<div class="post-info">
+    <br>
+    <time>2019年09月18日</time>
+</div>
+<br>
 <div class="post-line"></div>
 
 		
@@ -103,7 +117,7 @@ if (!doNotTrack) {
 <br/>
 <p>当游戏<strong>进行一项更新或主办一场活动</strong>时，你将会在玩家库首部进行得知，如果玩家点击该项目，还将了解到该款游戏近期的全部更新情况。</p>
 <blockquote>
-<p>和<a href="https://partner.steamgames.com/doc/marketing/visibility">“产品更新曝光”功能</a>不同的是，由于此处并非商店页面的曝光，因此无需申请进行产品曝光。</p>
+<p>和<a href="https://partner.steamgames.com/doc/marketing/visibility" target="_blank" rel="noopener">“产品更新曝光”功能</a>不同的是，由于此处并非商店页面的曝光，因此无需申请进行产品曝光。</p>
 </blockquote>
 <p>2.新活动系统</p>
 <br/>
@@ -147,26 +161,11 @@ if (!doNotTrack) {
 <blockquote>
 <p>以上推论待 Steam Library 正式库推送时进行验证</p>
 </blockquote>
-<p><a href="https://partner.steamgames.com/doc/marketing/event_tools">如何在 Steam 推送活动信息/重大更新信息</a></p>
+<p><a href="https://partner.steamgames.com/doc/marketing/event_tools" target="_blank" rel="noopener">如何在 Steam 推送活动信息/重大更新信息</a></p>
 
 
 		
 	</div>
-
-	<div id="disqus_thread"></div>
-	<script>
-		
-
-		
-
-		(function() { 
-		var d = document, s = d.createElement('script');
-		s.src = 'https://stevenzeng-net.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 	<div class="pagination">
 		<a href="/posts/gdc%E6%BC%94%E8%AE%B2%E8%AE%B0%E5%BD%95%E5%A6%82%E4%BD%95%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%BB%BA%E8%AE%BE%E6%B8%B8%E6%88%8F%E7%A4%BE%E7%BE%A4/" class="left arrow">&#8592;</a>
@@ -180,7 +179,7 @@ if (!doNotTrack) {
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2021-12-29 11:03:19.7720016 &#43;0800 CST m=&#43;0.082404001">2021</time> Steven. 
+			&copy; <time datetime="2023-04-23 15:06:26.112557 &#43;0800 HKT m=&#43;0.047905293">2023</time> Steven. 
 			</span>
 		</footer>
 

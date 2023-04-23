@@ -21,16 +21,19 @@ if (!doNotTrack) {
 
 		
 		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/fonts.css">
-		<link rel="stylesheet" href="/css/style.css">
 		
-		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/font.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 		
 		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+
+		<script src="/js/darkmode.js"></script>
 	</head>
 
     <body>
@@ -72,12 +75,23 @@ if (!doNotTrack) {
 			</div>
 		</nav>
 
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
         
 
 <main>
-	<div class="post">
+	
+
+
+        <div class="post">
 		<h1 class="post-title">Steam 商城研究：首周销量测算方式</h1>
-<div style="text-align: center; margin: 10px;">2020年7月20日</div>
+<div class="post-info">
+    <br>
+    <time>2020年07月20日</time>
+</div>
+<br>
 <div class="post-line"></div>
 
 		
@@ -96,7 +110,7 @@ if (!doNotTrack) {
 <li>游戏是否成为玩家的话题性作品（在非 Steam 的渠道上，评分值 1-10分）</li>
 </ul>
 <h3 id="2-此前是否有人做过类似的报告">2. 此前是否有人做过类似的报告？</h3>
-<p>有的，Jake Birkett 曾经在2018年的时候就发表过<a href="https://www.gamasutra.com/blogs/JakeBirkett/20180425/316924/How_many_wishlists_should_you_have_when_launching_on_Steam.php">他对于 Steam 商城的见解</a>。虽然对于现在而言时间有些久远，但仍然值得一看。（我可能会在之后译介这片稿子，带来一个更全面的认知）</p>
+<p>有的，Jake Birkett 曾经在2018年的时候就发表过<a href="https://www.gamasutra.com/blogs/JakeBirkett/20180425/316924/How_many_wishlists_should_you_have_when_launching_on_Steam.php" target="_blank" rel="noopener">他对于 Steam 商城的见解</a>。虽然对于现在而言时间有些久远，但仍然值得一看。（我可能会在之后译介这片稿子，带来一个更全面的认知）</p>
 <p><img src="https://i.loli.net/2020/07/20/29loPtE5fFGjcJC.png" alt="image.png"></p>
 <h3 id="3-steam-销售数据上有很大变化吗">3. Steam 销售数据上有很大变化吗？</h3>
 <p>没有，虽然 Steam 通过 Steam 实验室为这个商城带来了很多新功能，但总体的销售量/愿望单量的变化自2018年以来没有根本性的变化。</p>
@@ -145,28 +159,13 @@ if (!doNotTrack) {
 <p>回到我们的标题，那么这个估算到底怎么做呢？数据上讲你的实际销售数据可能会高于你的愿望单量，也可能不足1%，但<strong>按着中位数来吧，这可能你比较好的对标选择。</strong></p>
 <h2 id="相关链接">🔗相关链接</h2>
 <ul>
-<li>看看 Simon Carless 是怎么说的：<a href="https://gamediscoverability.substack.com/p/steam-the-new-wishlists-to-first">Steam: the new &lsquo;wishlists to first week sales&rsquo; expectations</a></li>
-<li>Jake Birkett 2018年发表过的见解：<a href="https://www.gamasutra.com/blogs/JakeBirkett/20180425/316924/How_many_wishlists_should_you_have_when_launching_on_Steam.php">How many wishlists should you have when launching on Steam?</a></li>
+<li>看看 Simon Carless 是怎么说的：<a href="https://gamediscoverability.substack.com/p/steam-the-new-wishlists-to-first" target="_blank" rel="noopener">Steam: the new &lsquo;wishlists to first week sales&rsquo; expectations</a></li>
+<li>Jake Birkett 2018年发表过的见解：<a href="https://www.gamasutra.com/blogs/JakeBirkett/20180425/316924/How_many_wishlists_should_you_have_when_launching_on_Steam.php" target="_blank" rel="noopener">How many wishlists should you have when launching on Steam?</a></li>
 </ul>
 
 
 		
 	</div>
-
-	<div id="disqus_thread"></div>
-	<script>
-		
-
-		
-
-		(function() { 
-		var d = document, s = d.createElement('script');
-		s.src = 'https://stevenzeng-net.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 	<div class="pagination">
 		<a href="/posts/steamsearchlab/" class="left arrow">&#8592;</a>
@@ -180,7 +179,7 @@ if (!doNotTrack) {
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2021-12-29 11:03:19.7720016 &#43;0800 CST m=&#43;0.082404001">2021</time> Steven. 
+			&copy; <time datetime="2023-04-23 15:06:26.111004 &#43;0800 HKT m=&#43;0.046352251">2023</time> Steven. 
 			</span>
 		</footer>
 

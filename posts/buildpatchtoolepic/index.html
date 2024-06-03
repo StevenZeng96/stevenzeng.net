@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+		
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146588920-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>如何通过 BuildPatch Tool 为 Epic Game Store 上传游戏 &middot; Steven Zeng</title>
+
+		
+		<link rel="stylesheet" href="/css/style.css">
+		
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/font.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+		<link rel="me" href="https://mastodon.social/@stevenzeng">
+
+		<script src="/js/darkmode.js"></script>
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					
+						<h2 class="nav-title">Steven Zeng</h2>
+					
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/">
+                
+                <span>首页</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/tags/">
+                
+                <span>标签</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>关于</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
+        
+
+<main>
+	
+
+
+        <div class="post">
+		<h1 class="post-title">如何通过 BuildPatch Tool 为 Epic Game Store 上传游戏</h1>
+<div class="post-info">
+    <br>
+    <time>2024年06月03日</time>
+</div>
+<br>
+<div class="post-line"></div>
+
+		
+
+		<p><img src="https://s2.loli.net/2024/06/03/XVlxJLfdD7kPeIC.png" alt="Screenshot 2024-06-03 at 4.57.25PM.png"></p>
+<p>在进行了与好几个不同开发者的合作之后，发现大家对于 Epic Games 官方的 BuildPatch Tool 的使用起来还是普遍存在理解问题的。在这里给大家做一个简单的梳理。</p>
+<blockquote>
+<p>本指南针对 BuildPatch Tool 1.6.0 版本，由于 Epic Games 可能会对这个工具进行更新，使用前请注意版本号。</p>
+</blockquote>
+<p><a href="https://dev.epicgames.com/docs/epic-games-store/publishing-tools/uploading-binaries/bpt-instructions-160" target="_blank" rel="noopener">官方文档地址📄</a></p>
+<h2 id="-开始前的准备">⚒️ 开始前的准备</h2>
+<p>在开始前，你需要保证你拥有：</p>
+<ol>
+<li>可以上传到该项目 Binary 的权限（简单来说就是你有权限能把包传到 Epic Games 上头去）</li>
+<li>一台能够联网访问 Epic Games 的电脑</li>
+</ol>
+<p>在保证拥有权限与 <a href="https://dev.epicgames.com/" target="_blank" rel="noopener">Epic Games 后台</a>均可访问之后便可以进行后续操作。</p>
+<h3 id="下载并解压-buildpatch-tool-压缩包">下载并解压 BuildPatch Tool 压缩包</h3>
+<p><strong>Windows 系统的电脑</strong>上下载 BuildPatch Tool 压缩包（虽然它自带了 Linux，macOS 与 Windows 的支持，但请不要尝试在 macOS 上使用它&hellip;毕竟官方文档都只考虑了 Windows，能好用到哪去🙅‍♂️🙅‍♂️🙅‍♂️）</p>
+<p><a href="https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/BuildPatchTool.zip" target="_blank" rel="noopener">⬇️ BuildPatch Tool 下载地址</a></p>
+<h3 id="上传信息准备">上传信息准备</h3>
+<p>在完成上传之后你需要首先找到 Build Patch Tool Credentials，这相当于 Epic 给你准备的一个传包专用的账号密码组合。你可以在 <a href="https://dev.epicgames.com/" target="_blank" rel="noopener">Epic Games 后台</a>的具体项目页面 &gt; Product Settings (在侧边栏上) &gt; BPT Credentials 上获得</p>
+<p><img src="https://s2.loli.net/2024/06/03/g3xntSPiuTF1VvG.png" alt="Screenshot 2024-06-03 at 4.38.23PM.png"></p>
+<p>在这里我们假定拿到的 BPT Client ID 为 <code>randomID</code>，BPT Client Secret 为 <code>mima12345</code> 请拿小本本记好这两个值，等会要考！</p>
+<p><strong>1. 访问后台管理包文件的页面</strong></p>
+<p>随后通过<a href="https://dev.epicgames.com/" target="_blank" rel="noopener">Epic Games 后台</a>的具体项目页面 &gt; <strong>Epic Game Store</strong>(在侧边栏上) &gt; <strong>Artifacts and Binaries</strong> 访问管理包文件的后台页面。</p>
+<blockquote>
+<p>在这个页面和整个 Epic Games 后台上可以看到他们家特色的三个沙盒结构，分别为：Dev，Stage，Live。</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2024/06/03/FaklIKSq1EZmVzG.png" alt="Sandbox.png"></p>
+<blockquote>
+<p>在我理解中，你可以认为 Dev 为开发者自己使用的生产环境，进行开发调试和配置设置的部分，在准备妥当之后，开发者或发行商可以将 Dev 沙盒内的设置推送到 Stage 进行测试。
+在确定无误之后，便可以进行审核请求，要求 Epic Games Store 对游戏内容与商店页面进行最后审核。在审核通过后，你即可通过推送 Live 沙盒进行对用户的全量发布</p>
+<p>请注意：在没有确认具体发售时间的情况下，Epic Games Store 的后台只会将游戏以即将发布的模式进行预发布。在确认了具体发售时间之后，Epic Games Store 团队将会对所有的游戏设置进行进一步的游戏审核（一般为3-5个工作）。</p>
+</blockquote>
+<p>在 Dev 的 Tab 下，找到最右侧的三个小点，在弹出的二级菜单中点击 Manage Artifact.</p>
+<p><img src="https://s2.loli.net/2024/06/03/PXY6ufj3SNpiZs8.png" alt="ManageArtifact.png"></p>
+<p>在出现的新页面中，<strong>点右侧的 Instructions</strong></p>
+<p><img src="https://s2.loli.net/2024/06/03/fTZgpthuKR6EeJc.png" alt="Instructions.png"></p>
+<p>然后点击中间的 Command line template for this artifact，你的剪贴板上就会自动获取以下的内容，拿个记事本记录一下！</p>
+<blockquote>
+<p>注意！由于我们遇到的很多人都有填错的部分，所以请尽情的使用它来获得对应的命令并让它自动填一部分（准确来说三个）的信息。能不要自己填的就一定不要自己填！！</p>
+</blockquote>
+<pre tabindex="0"><code>BuildPatchTool.exe -OrganizationId=&#34;&lt;组织的ID号，你将会自动获得&gt;&#34; -ProductId=&#34;&lt;产品的ID号，你将会自动获得&gt;&#34; -ArtifactId=&#34;&lt;Artifact 的ID号，你将会自动获得&gt;&#34; -ClientId=&#34;&lt;YourClientId&gt;&#34; -ClientSecret=&#34;&lt;YourSecret&gt;&#34; -mode=UploadBinary -BuildRoot=&#34;&lt;LocationOfLocalBuild&gt;&#34; -CloudDir=&#34;&lt;YourCloudDir&gt;&#34; -BuildVersion=&#34;&lt;YourBuildVersion&gt;&#34; -AppLaunch=&#34;&lt;AppToRun&gt;&#34; -AppArgs=&#34;&lt;LaunchArguments&gt;&#34; -FileAttributeList=&#34;&lt;LocationOfAttributesFile&gt;&#34; -FileIgnoreList=&#34;&lt;LocationOfIgnoreFile&gt;&#34;
+</code></pre><p><strong>2. 准备剩余的上传信息</strong></p>
+<p>接下来的事情就变的简单起来了。你必须填写内容为：</p>
+<ul>
+<li><strong>ClientId 与 ClientSecret</strong>：还记得开头 Build Patch Tool Credentials 嘛，狠狠地用起来！这里我们用我们假定的 BPT Client ID <code>randomID</code>，BPT Client Secret <code>mima12345</code></li>
+<li><strong>BuildRoot</strong>：填写你的包的所在地址。举个例子 <code>D:/MyGmame/</code></li>
+<li><strong>CloudDir</strong>：虽然官方文档说这是选填，但不幸的是其实它是个必填项目，你可以写一个类似于你包所在位置下的一个位置。 举个例子 <code>D:/MyGmame/Cache/</code></li>
+<li><strong>BuildVersion</strong>: 填写你的游戏版本号。举个例子 <code>1.0.0</code></li>
+<li><strong>AppLaunch</strong>： 填写你的游戏的启动项目。举个例子 <code>gamelauncher.exe</code></li>
+<li><strong>AppArgs</strong>： 填写启动游戏时需要使用的额外命令行，可以为空。这里我们使用空。</li>
+</ul>
+<p>于是组装之前在记事本上记录的内容，就能获得完整的使用命令：</p>
+<pre tabindex="0"><code>BuildPatchTool.exe -OrganizationId=&#34;&lt;组织的ID号，你将会自动获得&gt;&#34; -ProductId=&#34;&lt;产品的ID号，你将会自动获得&gt;&#34; -ArtifactId=&#34;&lt;Artifact 的ID号，你将会自动获得&gt;&#34; -ClientId=&#34;randomID&#34; -ClientSecret=&#34;mima12345&#34; -mode=UploadBinary -BuildRoot=&#34;D:/MyGmame/&#34; -CloudDir=&#34;D:/MyGmame/Cache/&#34; -BuildVersion=&#34;1.0.0&#34; -AppLaunch=&#34;gamelauncher.exe&#34; -AppArgs=&#34;&#34; -FileAttributeList=&#34;&#34; -FileIgnoreList=&#34;&#34;
+</code></pre><p>拿出你喜欢的命令行工具进行使用吧！</p>
+<h2 id="-开始上传">🕺 开始上传！</h2>
+<p>如果看到如下的代码的话就代表着一件事情，恭喜你上传成功！</p>
+<p><img src="https://s2.loli.net/2024/06/03/LejOs4G9lcdYTCn.png" alt="success.png"></p>
+<h2 id="-常见问题">🙅‍♂️ 常见问题</h2>
+<p><strong>1. 路径写法：该命令可接受的写法如下，请注意写绝对路径而非相对路径。</strong></p>
+<pre tabindex="0"><code>-BuildRoot=&#34;D:/MyFolder/&#34;
+-BuildRoot=D:\MyFolder\
+-BuildRoot=D:\MyFolder
+-BuildRoot=D:/MyFolder/
+-BuildRoot=D:/MyFolder
+-BuildRoot=&#34;D:\MyFolder\\&#34;
+</code></pre><p><strong>2. 常见报错 - CloudDir, BuildRoot, ArtifactId, BuildVersion, AppLaunch, and AppArgs are reguired parameters</strong></p>
+<p>基本是因为在填上传参数的时候少写了一个导致，请注意 CloudDir 参数必填而不是官方文档说的选填项目。
+此外还有一个常见问题是由于参数前少写了“-”符号导致的，请注意不要缺了漏了。</p>
+<h2 id="-史蒂文的牢骚话">👿 史蒂文的牢骚话</h2>
+<p>说实话自从 Epic Games 上了 Now On Epic Program 和各种针对开发者的让利反馈活动之后， 对于 Epic Games 这样进入单机游戏市场的搅局行为我是非常赞赏的（多点不一样的平台和对开发者的让利活动，谁不喜欢呢）</p>
+<p><del>但实际上 Epic Games 经过了差不多一两年的优化之后，整个平台还是不够好用，各种奇怪的设计和非常难用的后台总给人一种“活该《堡垒之夜》启动器”的狗血感!!!</del></p>
+<p>可长点心吧！！</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/starfieldchinese/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+            <figure class="article-discussion">
+              <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "stevenzeng-net" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </figure>
+			
+			<span>
+			&copy; <time datetime="2024-06-03 16:59:15.475391 &#43;0800 HKT m=&#43;0.056834001">2024</time> Steven. 
+			</span>
+		</footer>
+
+    </body>
+</html>

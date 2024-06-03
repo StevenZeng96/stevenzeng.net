@@ -6,7 +6,16 @@
     <description>Recent content on Steven Zeng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 08 Aug 2023 09:28:00 +0800</lastBuildDate><atom:link href="https://www.stevenzeng.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jun 2024 15:33:00 +0800</lastBuildDate><atom:link href="https://www.stevenzeng.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何通过 BuildPatch Tool 为 Epic Game Store 上传游戏</title>
+      <link>https://www.stevenzeng.net/posts/buildpatchtoolepic/</link>
+      <pubDate>Mon, 03 Jun 2024 15:33:00 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/buildpatchtoolepic/</guid>
+      <description>在进行了与好几个不同开发者的合作之后，发现大家对于 Epic Games 官方的 BuildPatch Tool 的使用起来还是普遍存在理解问题的。在这里给大家做一个简单的梳理。 本指南针对 BuildPatch Tool 1.6.0 版本，由于 Epic Games 可能会对这个工具进行更新，使用前请注意版本</description>
+    </item>
+    
     <item>
       <title>如何将显示为英文的星空改为简体中文</title>
       <link>https://www.stevenzeng.net/posts/starfieldchinese/</link>

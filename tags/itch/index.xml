@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>itch on Steven Zeng</title>
+    <link>https://www.stevenzeng.net/tags/itch/</link>
+    <description>Recent content in itch on Steven Zeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 06 Jun 2024 15:33:00 +0800</lastBuildDate><atom:link href="https://www.stevenzeng.net/tags/itch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用 Butler 为 itch.io 上传游戏包</title>
+      <link>https://www.stevenzeng.net/posts/usebatlertouploadgame/</link>
+      <pubDate>Thu, 06 Jun 2024 15:33:00 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/usebatlertouploadgame/</guid>
+      <description>当需要在 itch.io 网站上头发售游戏的时候，命令行工具 Butler 可能是你逃不脱的玩意，相较于其他平台更为繁琐的上传流程与步骤，Butler 其实提供了一个相当清爽的游戏包提上传的方式，而学习怎么使用 Butler 其实相当容易，下面就</description>
+    </item>
+    
+  </channel>
+</rss>

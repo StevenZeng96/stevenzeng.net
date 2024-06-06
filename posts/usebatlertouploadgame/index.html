@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+		
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146588920-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>如何使用 Butler 为 itch.io 上传游戏包 &middot; Steven Zeng</title>
+
+		
+		<link rel="stylesheet" href="/css/style.css">
+		
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/font.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Steven Zeng" />
+		<link rel="me" href="https://mastodon.social/@stevenzeng">
+
+		<script src="/js/darkmode.js"></script>
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					
+						<h2 class="nav-title">Steven Zeng</h2>
+					
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/">
+                
+                <span>首页</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/tags/">
+                
+                <span>标签</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>关于</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
+        
+
+<main>
+	
+
+
+        <div class="post">
+		<h1 class="post-title">如何使用 Butler 为 itch.io 上传游戏包</h1>
+<div class="post-info">
+    <br>
+    <time>2024年06月06日</time>
+</div>
+<br>
+<div class="post-line"></div>
+
+		
+
+		<p>当需要在 itch.io 网站上头发售游戏的时候，命令行工具 Butler 可能是你逃不脱的玩意，相较于其他平台更为繁琐的上传流程与步骤，Butler 其实提供了一个相当清爽的游戏包提上传的方式，而学习怎么使用 Butler 其实相当容易，下面就将简单介绍一下这个工具的使用方法。</p>
+<h2 id="-安装-butler">👨‍💻 安装 Butler</h2>
+<p>安装 Butler 其实相当容易，访问 <a href="https://itchio.itch.io/butler" target="_blank" rel="noopener">https://itchio.itch.io/butler</a></p>
+<p><img src="https://s2.loli.net/2024/06/06/C5tgQ6smdYPivcB.png" alt="Butler"></p>
+<p>在该网页中选择自己使用的系统版本，下载解压即可，解压完毕之后会看到如下的内容。</p>
+<p><img src="https://s2.loli.net/2024/06/06/biaJnwYv6BXHWx1.png" alt="解压后的内容"></p>
+<h2 id="-将-butler-加入-path-中可选步骤">🛣️ 将 Butler 加入 PATH 中（可选步骤）</h2>
+<p>如果想要在之后的使用中，让整个操作更加丝滑，可以考虑下直接将 Butler 加入到 PATH 中，而不是每次先通过 Terminal 找到 Butler 然后再使用 Butler 上传游戏包的模式。</p>
+<h3 id="-windows将-butler-加入到-path-中">💻 Windows：将 Butler 加入到 PATH 中</h3>
+<blockquote>
+<p>本指南使用的 Windows 版本为 Windows 11， 其他版本应也能够通过类似的方法找到对应的设置</p>
+</blockquote>
+<ol>
+<li>按 Windows + Q，调用搜索栏，查找查找**<u>高级系统设置</u>**（或者你跟我一样搜索 <strong><u>Advanced System Settings</u></strong>），</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/06/06/jtRYpdWwPT3iSXl.png" alt="Screenshot 6_6_2024 2_36_36 PM.png"></p>
+<ol start="2">
+<li>点击打开后，在系统属性窗口中选择右下角的**<u>环境变量</u>**。</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/06/06/AUMfgJzL7KcYGbQ.png" alt=" 6_6_2024 2_36_49 PM.png"></p>
+<ol start="3">
+<li>在随后的环境变量窗口下找到下方系统变量的中的 Path，点击**<u>编辑</u>**</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/06/06/Os62BDQMVxcElUT.png" alt=" 6_6_2024 2_37_03 PM.png"></p>
+<ol start="3">
+<li>随后在新出现的编辑窗口中，选择**<u>新建</u>**，把刚刚下载好的 Butler 的路径写到环境变量里头即可</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/06/06/PuLc79lpDIiQKhr.png" alt=" 6_6_2024 2_37_11 PM.png"></p>
+<h3 id="-macos将-butler-加入到-path-中">💻 macOS：将 Butler 加入到 Path 中</h3>
+<p>相当简单，使用 <code>export PATH=$PATH:加上Butler所在的路径</code> ，即可。不过在使用前记得检查一下 butler 是否可运行，如果出现不可运行的提示，记得在<strong>System Setting - Privacy &amp; Security</strong> 中点允许运行。</p>
+<h2 id="-使用-butler-进行游戏包上传">🎈 使用 Butler 进行游戏包上传</h2>
+<h3 id="1-检查一下是否配置妥当">1. 检查一下是否配置妥当</h3>
+<p>如果你已经按照如上所诉的指南完成了 Butler 的下载安装，那么现在就来看一下 butler 是否可以正常运行了！</p>
+<p>在命令行中输入 <code>butler -V</code> (记得是大写的 V)，看到类似如下的文字即代表你已经准备就绪</p>
+<p><img src="https://s2.loli.net/2024/06/06/YgCF2jeit6kIc9W.png" alt="Screenshot 2024-06-06 at 3.22.42PM.png"></p>
+<h3 id="2-登录-itch-账号">2. 登录 Itch 账号</h3>
+<p>为了能够在下面继续使用 butler 为账号上传游戏包，那么接下来一步就是使用 butler 登录 itch.io。使用命令 <code>butler login</code>，看到类似如下的画面，等待浏览器弹出授权，点击授权通过即可。</p>
+<p><img src="https://s2.loli.net/2024/06/06/se27fgjzxdoyhFP.png" alt="Screenshot 2024-06-06 at 3.26.20PM.png"></p>
+<p>如果已经完成登录，那么使用 <code>butler login</code>如果看到如下的提示，则代表着登录成功。</p>
+<p><img src="https://s2.loli.net/2024/06/06/D6MzlIV1sPFYyfZ.png" alt="Screenshot 2024-06-06 at 3.28.51PM.png"></p>
+<h3 id="3-使用-butler-进行传包">3. 使用 butler 进行传包</h3>
+<p>那么接下来的事情就相当简单了。你只需要记住一个命令：<code>butler push 包地址 用户名/游戏名:channel</code></p>
+<p>我们举个例子，我们的 Windows 版本的游戏存在了 ~/Downloads/GameBuild/GameBuild.zip 中，用户名叫 2PGames，游戏叫 ExampleGame的话。那么这段命令即为：</p>
+<p><code>butler push ~/Downloads/GameBuild/GameBuild.zip 2PGames/ExampleGame:windows</code></p>
+<blockquote>
+<p>因为 Itch 需要知道你的游戏包是为什么平台使用的，所以在后头的的 Channel 中需要标记所属平台，它可以是 <code>osx</code>, <code>linux</code>, <code>soundtrack</code>等等，看具体需求哈</p>
+</blockquote>
+<p>如果一切顺利，那么你将看到如下的进度条：</p>
+<p><img src="https://s2.loli.net/2024/06/06/gU6kzqDCHwFE8bu.gif" alt="butler-push-first.gif"></p>
+<p>随后让在上传完毕后，itch 后台将会处理一下刚刚上传的文件，大概在几分钟后，你就能够在自己的后台上看到对应的游戏包了！</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/buildpatchtoolepic/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+            <figure class="article-discussion">
+              <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "stevenzeng-net" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </figure>
+			
+			<span>
+			&copy; <time datetime="2024-06-06 15:45:30.254601 &#43;0800 HKT m=&#43;0.054092792">2024</time> Steven. 
+			</span>
+		</footer>
+
+    </body>
+</html>

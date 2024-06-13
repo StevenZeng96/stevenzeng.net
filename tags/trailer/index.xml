@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trailer on Steven Zeng</title>
+    <link>https://www.stevenzeng.net/tags/trailer/</link>
+    <description>Recent content in Trailer on Steven Zeng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 13 Jun 2024 09:02:20 +0800</lastBuildDate><atom:link href="https://www.stevenzeng.net/tags/trailer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GDC 演讲记录：做与众不同的游戏预告片</title>
+      <link>https://www.stevenzeng.net/posts/makegametrailer/</link>
+      <pubDate>Thu, 13 Jun 2024 09:02:20 +0800</pubDate>
+      
+      <guid>https://www.stevenzeng.net/posts/makegametrailer/</guid>
+      <description>本文内容摘记自 GDC 2024年演讲《All Game Trailers Are Not Created Equal》 如需查看原文请访问 Youtube 查看演讲实录 这个演讲是站在游戏发行商的角度上看游戏预告片制作的过程，同时探讨一下不同的游戏预告片的组成模式与内容，同时也</description>
+    </item>
+    
+  </channel>
+</rss>
